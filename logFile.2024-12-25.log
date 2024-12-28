@@ -1,0 +1,48 @@
+1483 [main] ERROR o.b.f.j.config.DataSourceConfig - Could not connect to the database.
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: password authentication failed for user "sedaq-app"
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:602)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:589)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:99)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at org.but.feec.javafx.config.DataSourceConfig.initializeDataSource(DataSourceConfig.java:58)
+	at org.but.feec.javafx.config.DataSourceConfig.initializeDataSource(DataSourceConfig.java:34)
+	at org.but.feec.javafx.Main.main(Main.java:7)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "sedaq-app"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:711)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:139)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:362)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:203)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:479)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:568)
+	... 5 common frames omitted
+2439 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+1513 [main] ERROR o.b.f.j.config.DataSourceConfig - Could not connect to the database.
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: password authentication failed for user "sedaq-app"
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:602)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:589)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:99)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at org.but.feec.javafx.config.DataSourceConfig.initializeDataSource(DataSourceConfig.java:58)
+	at org.but.feec.javafx.config.DataSourceConfig.initializeDataSource(DataSourceConfig.java:34)
+	at org.but.feec.javafx.Main.main(Main.java:7)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "sedaq-app"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:711)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:139)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:362)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:203)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:479)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:568)
+	... 5 common frames omitted
+2397 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
