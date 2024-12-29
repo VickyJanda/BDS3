@@ -1,93 +1,710 @@
-1305 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-21774 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-1130 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-1129 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-17719 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-1325 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-6024 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-1341 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-14868 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-1113 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-12624 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-16375 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-1130 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-11341 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-1098 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-5841 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-8085 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-51751 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-1357 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-11553 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-14037 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-1141 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-10005 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-12594 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-15570 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-1122 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-6764 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-9827 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-11542 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
+1612 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+9953 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+24587 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+27750 [JavaFX Application Thread] ERROR o.b.f.j.c.PersonsEditController - Stage is not set in PersonsEditController.
+27751 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsEditController - PersonsEditController initialized
+27753 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsEditController - Stage successfully set in PersonsEditController.
+35516 [JavaFX Application Thread] ERROR o.b.f.j.c.PersonsEditController - Stage is not set in PersonsEditController.
+35516 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsEditController - PersonsEditController initialized
+35518 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsEditController - Stage successfully set in PersonsEditController.
+41827 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+45533 [JavaFX Application Thread] ERROR o.b.f.j.c.PersonsEditController - Stage is not set in PersonsEditController.
+45534 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsEditController - PersonsEditController initialized
+45535 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsEditController - Stage successfully set in PersonsEditController.
+1355 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6955 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+213771 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+1115 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7678 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1078 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7665 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1117 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6092 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1197 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6837 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+968  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5326 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+935  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7366 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+967  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6680 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+993  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+8632 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+959  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6165 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+932  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6284 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+950  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7873 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+946  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+9611 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+994  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7031 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+32531 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+37508 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+960  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+19602 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+959  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+8034 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
 974  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-5897 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-7812 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-1110 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-11758 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-14224 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-16672 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-1100 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-10263 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-13707 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-1201 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-9674 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-12573 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
+7852 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+998  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7536 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+975  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7319 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+974  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+8324 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+998  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7347 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
 965  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-983  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-1439 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-130094 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-133883 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-136011 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-269633 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-1112 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-8015 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-17377 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-99633 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-1486 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-16131 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-19333 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
+7522 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+952  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6545 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+972  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5997 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+972  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6127 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
 961  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-48290 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-1382 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-19164 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-41301 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-46658 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-1374 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-1122 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-996  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-3275 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-3228 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-2440 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-1376 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-1343 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-2452 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-992  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-8719 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-2433 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-8399 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-983  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-5454 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-7941 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
+6198 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+968  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5748 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+946  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+9048 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+957  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+11098 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+971  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5446 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+950  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5129 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+932  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5281 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+947  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5371 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1188 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6932 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1108 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7533 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1115 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+11702 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+975  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5297 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+962  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6450 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+964  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7597 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+974  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6986 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+121134 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+124544 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+126665 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+128641 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+131430 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
+1106 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7191 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1133 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6274 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1110 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+1154 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5724 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+966  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+8416 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+955  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5946 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1328 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6691 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1127 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7352 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1323 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5909 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+12097 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+12103 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+18634 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+18639 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+20007 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+20011 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+21356 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+21361 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+22465 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+22469 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+23507 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+23511 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+29948 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+29952 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+37553 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+37557 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+38367 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+38371 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+39843 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+39847 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+41660 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+41665 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+42625 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+42629 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+977  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5910 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1099 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+7816 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+12346 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
+945  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2510 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+939  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2691 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+17612 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+17618 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+27808 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+27812 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+28697 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+28701 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+30476 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+30481 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+32195 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+32199 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+34245 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+34249 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+102477 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+102481 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+940  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2920 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+923  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3972 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8390 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
+922  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2543 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+923  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3222 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+976  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3820 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+971  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3408 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+948  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+967  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2483 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+945  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3359 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+958  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3262 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+981  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5290 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+938  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3019 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+964  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3383 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+943  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2589 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+970  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+4108 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+939  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3559 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+957  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2842 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+942  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3351 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+968  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+4170 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+970  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2810 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+942  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2903 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+932  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2375 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+967  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2441 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+957  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2464 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+960  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2455 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+964  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3331 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+987  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2994 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+985  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2678 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+975  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3341 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+981  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2541 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+942  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2444 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
 1002 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-6979 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-1356 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-1388 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-2641 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-21712 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-26127 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-1174 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-11470 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-13963 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-1128 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
-9110 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
-11867 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsDetailViewController - PersonsDetailViewController initialized
-15613 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
-20014 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonCreateController - PersonCreateController initialized
+3606 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+954  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2503 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1062 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2573 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+984  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3651 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+945  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3014 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+957  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2542 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+963  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2431 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+945  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2466 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1374 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2987 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1114 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2657 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1117 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3451 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1105 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2675 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+9394 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+13733 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+959  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2590 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5534 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8359 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+9573 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+10584 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+12906 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+15095 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+15503 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+993  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3740 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6691 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8310 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+9649 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+10576 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+11068 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+957  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2773 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5001 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6772 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+7278 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+7723 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8097 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8461 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8840 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+10706 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+12039 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+12530 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+12906 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+941  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2709 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+4592 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6463 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+7296 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8384 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+9462 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+10206 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+10602 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+983  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2481 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+4356 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5206 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5913 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6528 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+7212 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+7953 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8369 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+976  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5544 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+7159 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8293 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+9273 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+979  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3394 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5627 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6395 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6920 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+7478 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8014 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1012 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+12811 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+27704 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+29966 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+37934 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+39950 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+40539 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+41560 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+42145 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+43208 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+43698 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+44856 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1371 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+1148 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3728 [JavaFX Application Thread] ERROR o.b.f.j.c.PersonsController - PersonService is null. Initialization failed.
+1124 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2748 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6493 [JavaFX Application Thread] ERROR o.b.f.j.c.PersonsController - Error loading FXML: BookTable.fxml
+javafx.fxml.LoadException: 
+file:/mnt/c/Users/Viky/Desktop/%c5%a0kola/FEKT-VUT/BDS/java%20vec/bds-javafx-training-main/target/bds-javafx-training-1.0.0.jar!/org/but/feec/javafx/fxml/BookTable.fxml:8
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2722)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:946)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:983)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:230)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:757)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2853)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2649)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+	at org.but.feec.javafx.controllers.PersonsController.loadNewContent(PersonsController.java:153)
+	at org.but.feec.javafx.controllers.PersonsController.handleSwitchLibraryButton(PersonsController.java:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.scene.control.Button.fire(Button.java:203)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:941)
+	... 70 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "org.but.feec.javafx.services.BookService.getBooksBasicView()" because "this.bookService" is null
+	at org.but.feec.javafx.controllers.BookController.initializeBooksData(BookController.java:229)
+	at org.but.feec.javafx.controllers.BookController.<init>(BookController.java:89)
+	... 76 common frames omitted
+1195 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2906 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+14846 [JavaFX Application Thread] ERROR o.b.f.j.c.PersonsController - Error loading FXML: BookTable.fxml
+javafx.fxml.LoadException: 
+file:/mnt/c/Users/Viky/Desktop/%c5%a0kola/FEKT-VUT/BDS/java%20vec/bds-javafx-training-main/target/bds-javafx-training-1.0.0.jar!/org/but/feec/javafx/fxml/BookTable.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2722)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2692)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+	at org.but.feec.javafx.controllers.PersonsController.loadNewContent(PersonsController.java:153)
+	at org.but.feec.javafx.controllers.PersonsController.handleSwitchLibraryButton(PersonsController.java:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.scene.control.Button.fire(Button.java:203)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2688)
+	... 65 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TableView.setItems(javafx.collections.ObservableList)" because "this.systemBooksTableView" is null
+	at org.but.feec.javafx.controllers.BookController.initialize(BookController.java:77)
+	... 76 common frames omitted
+1133 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2636 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+4709 [JavaFX Application Thread] ERROR o.b.f.j.c.PersonsController - Error loading FXML: BookTable.fxml
+javafx.fxml.LoadException: 
+file:/mnt/c/Users/Viky/Desktop/%c5%a0kola/FEKT-VUT/BDS/java%20vec/bds-javafx-training-main/target/bds-javafx-training-1.0.0.jar!/org/but/feec/javafx/fxml/BookTable.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2722)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2692)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+	at org.but.feec.javafx.controllers.PersonsController.loadNewContent(PersonsController.java:153)
+	at org.but.feec.javafx.controllers.PersonsController.handleSwitchLibraryButton(PersonsController.java:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.scene.control.Button.fire(Button.java:203)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2688)
+	... 65 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "javafx.scene.control.TextField.textProperty()" because "this.searchNameField" is null
+	at org.but.feec.javafx.controllers.BookController.setupSearch(BookController.java:104)
+	at org.but.feec.javafx.controllers.BookController.initialize(BookController.java:86)
+	... 76 common frames omitted
+1133 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2835 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+11470 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+13534 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+14603 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+16228 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+17558 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+18166 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+18707 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+19374 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+19822 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+24656 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+25274 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+1026 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+6829 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+10030 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+10921 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+11408 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+11976 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+14819 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+16183 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+16928 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+18022 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+18531 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+22743 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+23393 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+25479 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+26474 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+28869 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+1016 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3232 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6664 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+1139 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+5476 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8234 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+16130 [JavaFX Application Thread] INFO  o.b.f.j.c.BookCreateController - BookCreateController initialized
+1123 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+10655 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+67511 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+68832 [JavaFX Application Thread] INFO  o.b.f.j.c.BookCreateController - BookCreateController initialized
+999  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3303 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+45183 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+46277 [JavaFX Application Thread] INFO  o.b.f.j.c.BookCreateController - BookCreateController initialized
+991  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3477 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5730 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+7214 [JavaFX Application Thread] INFO  o.b.f.j.c.BookCreateController - BookCreateController initialized
+18901 [JavaFX Application Thread] ERROR o.b.f.j.c.BookCreateController - Error parsing price or quantity: For input string: "dadwsa"
+962  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2668 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5091 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+7101 [JavaFX Application Thread] INFO  o.b.f.j.c.BookCreateController - BookCreateController initialized
+996  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2840 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+4616 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+6400 [JavaFX Application Thread] INFO  o.b.f.j.c.BookCreateController - BookCreateController initialized
+32076 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+86146 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+87289 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+88130 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+88915 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+90663 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+92232 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+93315 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+94716 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+100864 [JavaFX Application Thread] INFO  o.b.f.j.c.BookCreateController - BookCreateController initialized
+977  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2377 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5318 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+962  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2400 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+4159 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+6614 [JavaFX Application Thread] ERROR o.b.f.j.c.BookEditController - Stage is not set in BooksEditController.
+1130 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+4857 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8256 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+19521 [JavaFX Application Thread] ERROR o.b.f.j.c.BookEditController - Stage is not set in BooksEditController.
+966  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3646 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+6042 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+9322 [JavaFX Application Thread] ERROR o.b.f.j.c.BookEditController - Stage is not set in BooksEditController.
+957  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+2960 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5385 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+7636 [JavaFX Application Thread] ERROR o.b.f.j.c.BookEditController - Stage is not set in BooksEditController.
+7637 [JavaFX Application Thread] INFO  o.b.f.j.c.BookEditController - BooksEditController initialized
+7638 [JavaFX Application Thread] INFO  o.b.f.j.c.BookEditController - Stage successfully set in BooksEditController.
+1025 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3559 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+17257 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+20876 [JavaFX Application Thread] ERROR o.b.f.j.c.BookEditController - Stage is not set in BooksEditController.
+20876 [JavaFX Application Thread] INFO  o.b.f.j.c.BookEditController - BooksEditController initialized
+20878 [JavaFX Application Thread] INFO  o.b.f.j.c.BookEditController - Stage successfully set in BooksEditController.
+47671 [JavaFX Application Thread] ERROR o.b.f.j.c.BookEditController - Stage is not set in BooksEditController.
+47671 [JavaFX Application Thread] INFO  o.b.f.j.c.BookEditController - BooksEditController initialized
+47673 [JavaFX Application Thread] INFO  o.b.f.j.c.BookEditController - Stage successfully set in BooksEditController.
+55502 [JavaFX Application Thread] ERROR o.b.f.j.c.BookEditController - Stage is not set in BooksEditController.
+55503 [JavaFX Application Thread] INFO  o.b.f.j.c.BookEditController - BooksEditController initialized
+55504 [JavaFX Application Thread] INFO  o.b.f.j.c.BookEditController - Stage successfully set in BooksEditController.
+157324 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+158791 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+159321 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+159827 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+343446 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+343819 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+344277 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+350833 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+487087 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+488355 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+488854 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+489286 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+489780 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+490232 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized

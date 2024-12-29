@@ -54,4 +54,9 @@ public class PersonService {
         return ARGON2.hash(10, 65536, 1, password).toCharArray();
     }
 
+    public void deletePersonById(Long id) {
+        personRepository.deletePersonById(id);
+    }
+
+
 }

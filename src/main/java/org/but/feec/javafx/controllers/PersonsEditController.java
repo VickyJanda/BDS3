@@ -2,6 +2,7 @@ package org.but.feec.javafx.controllers;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -38,7 +39,9 @@ public class PersonsEditController {
     @FXML
     private TextField familyNameTextField;
     @FXML
-    private TextField nicknameTextField;
+    private TextField ageTextField;
+    @FXML
+    private TextField phoneNumberTextField;
 
     private PersonService personService;
     private PersonRepository personRepository;
@@ -49,12 +52,23 @@ public class PersonsEditController {
 
     public void setStage(Stage stage) {
         this.stage = stage;
+        if (this.stage == null) {
+            logger.error("Stage is still null after setStage()");
+        } else {
+            logger.info("Stage successfully set in PersonsEditController.");
+        }
     }
+
 
     @FXML
     public void initialize() {
         personRepository = new PersonRepository();
         personService = new PersonService(personRepository);
+        if (stage == null) {
+            logger.error("Stage is not set in PersonsEditController.");
+        } else {
+            logger.info("Stage is set in PersonsEditController.");
+        }
 
         validation = new ValidationSupport();
         validation.registerValidator(idTextField, Validator.createEmptyValidator("The id must not be empty."));
@@ -62,11 +76,12 @@ public class PersonsEditController {
         validation.registerValidator(emailTextField, Validator.createEmptyValidator("The email must not be empty."));
         validation.registerValidator(givenNameTextField, Validator.createEmptyValidator("The first name must not be empty."));
         validation.registerValidator(familyNameTextField, Validator.createEmptyValidator("The last name must not be empty."));
-        validation.registerValidator(nicknameTextField, Validator.createEmptyValidator("The nickname must not be empty."));
+        validation.registerValidator(ageTextField, Validator.createEmptyValidator("The age must not be empty."));
+        validation.registerValidator(phoneNumberTextField, Validator.createEmptyValidator("The phone number must not be empty."));
 
         editPersonButton.disableProperty().bind(validation.invalidProperty());
 
-        loadPersonsData();
+        Platform.runLater(() -> loadPersonsData());
 
         logger.info("PersonsEditController initialized");
     }
@@ -75,13 +90,18 @@ public class PersonsEditController {
      * Load passed data from Persons controller. Check this tutorial explaining how to pass the data between controllers: https://dev.to/devtony101/javafx-3-ways-of-passing-information-between-scenes-1bm8
      */
     private void loadPersonsData() {
-        Stage stage = this.stage;
+        if (this.stage == null) {
+            logger.error("Stage is null. Cannot load person data.");
+            return;
+        }
         if (stage.getUserData() instanceof PersonBasicView) {
             PersonBasicView personBasicView = (PersonBasicView) stage.getUserData();
             idTextField.setText(String.valueOf(personBasicView.getId()));
             emailTextField.setText(personBasicView.getEmail());
             givenNameTextField.setText(personBasicView.getGivenName());
             familyNameTextField.setText(personBasicView.getFamilyName());
+            ageTextField.setText(personBasicView.getAge());
+            phoneNumberTextField.setText(personBasicView.getPhoneNumber());
         }
     }
 
@@ -92,13 +112,16 @@ public class PersonsEditController {
         String email = emailTextField.getText();
         String firstName = givenNameTextField.getText();
         String lastName = familyNameTextField.getText();
-        String nickname = nicknameTextField.getText();
+        Integer age = Integer.valueOf(ageTextField.getText());
+        String phoneNumber = phoneNumberTextField.getText();
 
         PersonEditView personEditView = new PersonEditView();
         personEditView.setId(id);
         personEditView.setEmail(email);
         personEditView.setGivenName(firstName);
         personEditView.setFamilyName(lastName);
+        personEditView.setAge(age);
+        personEditView.setPhoneNumber(phoneNumber);
 
         personService.editPerson(personEditView);
 
@@ -120,6 +143,9 @@ public class PersonsEditController {
         idlestage.setCycleCount(1);
         idlestage.play();
         Optional<ButtonType> result = alert.showAndWait();
+
+        Stage stage = (Stage) editPersonButton.getScene().getWindow();
+        stage.close();
     }
 
 }

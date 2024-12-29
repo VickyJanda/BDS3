@@ -4,6 +4,7 @@ import org.but.feec.javafx.api.*;
 import org.but.feec.javafx.config.DataSourceConfig;
 import org.but.feec.javafx.exceptions.DataAccessException;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,11 +55,22 @@ public class PersonRepository {
         return null;
     }
 
+    public void deletePersonById(Long id) {
+        try (Connection connection = DataSourceConfig.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM mydb.user WHERE user_id = ?")) {
+            preparedStatement.setLong(1, id);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error deleting person with ID: " + id, e);
+        }
+    }
+
+
     public List<PersonBasicView> getPersonsBasicView() {
         try (Connection connection = DataSourceConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(
                      "SELECT user_id, first_name, last_name, email, age, phone_number " +  // Updated query
-                             "FROM mydb.user p")) {
+                             "FROM mydb.user ORDER BY user_id")) {
             ResultSet resultSet = preparedStatement.executeQuery();
             List<PersonBasicView> personBasicViews = new ArrayList<>();
             while (resultSet.next()) {
@@ -124,6 +136,8 @@ public class PersonRepository {
         personBasicView.setEmail(rs.getString("email"));
         personBasicView.setGivenName(rs.getString("first_name"));  // Corrected column name
         personBasicView.setFamilyName(rs.getString("last_name"));  // Corrected column name
+        personBasicView.setAge(rs.getString("age"));
+        personBasicView.setPhoneNumber(rs.getString("phone_number"));
         return personBasicView;
     }
 

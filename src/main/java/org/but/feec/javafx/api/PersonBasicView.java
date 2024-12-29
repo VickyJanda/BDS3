@@ -12,6 +12,8 @@ public class PersonBasicView {
     private StringProperty email = new SimpleStringProperty();
     private StringProperty givenName = new SimpleStringProperty();
     private StringProperty familyName = new SimpleStringProperty();
+    private StringProperty age = new SimpleStringProperty();
+    private StringProperty phoneNumber = new SimpleStringProperty();
 
     public Long getId() {
         return idProperty().get();
@@ -45,6 +47,22 @@ public class PersonBasicView {
         this.familyNameProperty().setValue(familyName);
     }
 
+    public String getAge() {
+        return ageProperty().get();
+    }
+
+    public void setAge(String age) {
+        this.ageProperty().setValue(age);
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumberProperty().get();
+    }
+
+    public void setPhoneNumber(String PhoneNumber) {
+        this.phoneNumberProperty().setValue(PhoneNumber);
+    }
+
     // Property accessors
     public LongProperty idProperty() {
         return id;
@@ -61,4 +79,14 @@ public class PersonBasicView {
     public StringProperty familyNameProperty() {
         return familyName;
     }
+
+    public StringProperty ageProperty() {
+        return age;
+    }
+
+    public StringProperty phoneNumberProperty() {
+        return phoneNumber;
+    }
+
+
 }
