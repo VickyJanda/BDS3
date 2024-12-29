@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.but.feec.javafx.controllers.PersonsEditController">
     <children>
         <GridPane layoutX="22.0" layoutY="22.0" prefHeight="311.0" prefWidth="549.0">
             <columnConstraints>
@@ -30,22 +30,27 @@
                         <Insets left="5.0" />
                     </padding>
                 </Label>
-                <Label text="email" GridPane.rowIndex="1">
+                <Label text="Email" GridPane.rowIndex="1">
                     <padding>
                         <Insets left="5.0" />
                     </padding>
                 </Label>
-                <Label text="first name" GridPane.rowIndex="2">
+                <Label text="First name" GridPane.rowIndex="2">
                     <padding>
                         <Insets left="5.0" />
                     </padding>
                 </Label>
-                <Label text="last name" GridPane.rowIndex="3">
+                <Label text="Last name" GridPane.rowIndex="3">
                     <padding>
                         <Insets left="5.0" />
                     </padding>
                 </Label>
-                <Label text="nickname" GridPane.rowIndex="4">
+                <Label text="Age" GridPane.rowIndex="4">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label text="Phone" GridPane.rowIndex="5">
                     <padding>
                         <Insets left="5.0" />
                     </padding>
@@ -54,7 +59,8 @@
                 <TextField fx:id="emailTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField fx:id="givenNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                 <TextField fx:id="familyNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <TextField fx:id="nicknameTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="ageTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="phoneNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             </children>
         </GridPane>
         <Button fx:id="editPersonButton" layoutX="501.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleEditPersonButton" text="edit person" />
