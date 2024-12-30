@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="contentAnchorPane"
+            VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" fx:controller="org.but.feec.javafx.controllers.BookController">
+    <children>
+        <!-- Label for Search fields (above the Table) -->
+        <Label text="Search:" alignment="TOP_LEFT" textAlignment="CENTER" AnchorPane.topAnchor="72.0" AnchorPane.leftAnchor="48.0"/>
+
+        <!-- HBox for the search fields (above the Table) -->
+        <HBox spacing="2" alignment="CENTER_LEFT" AnchorPane.topAnchor="70.0" AnchorPane.leftAnchor="100.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="searchIdField" prefWidth="38.0"/>
+                <TextField fx:id="searchNameField" prefWidth="218.0"/>
+                <TextField fx:id="searchIsbnField" prefWidth="138.0"/>
+                <TextField fx:id="searchStatusField" prefWidth="98.0"/>
+                <TextField fx:id="searchPriceField" prefWidth="58.0"/>
+                <TextField fx:id="searchQuantityField" prefWidth="98.0"/>
+            </children>
+        </HBox>
+
+        <!-- Adjusted TableView position to ensure it doesn't overlap with search fields -->
+        <TableView fx:id="systemBooksTableView" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" prefWidth="662" prefHeight="300.0" maxWidth="1000" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="100.0">
+            <columns>
+                <TableColumn fx:id="bookId" minWidth="30.0" prefWidth="40" text="id" style="-fx-alignment: center;"/>
+                <TableColumn fx:id="bookName" minWidth="75.0" prefWidth="220" text="name" style="-fx-alignment: center;"/>
+                <TableColumn fx:id="bookIsbn" minWidth="75.0" prefWidth="140.0" text="isbn" style="-fx-alignment: center;"/>
+                <TableColumn fx:id="bookStatus" minWidth="75.0" prefWidth="100.0" text="status" style="-fx-alignment: center;"/>
+                <TableColumn fx:id="bookPrice" minWidth="30.0" prefWidth="60" text="price" style="-fx-alignment: center;"/>
+                <TableColumn fx:id="bookQuantity" minWidth="75.0" prefWidth="100.0" text="quantity" style="-fx-alignment: center;"/>
+            </columns>
+        </TableView>
+
+        <!-- Action buttons below table -->
+        <HBox spacing="10" alignment="CENTER_LEFT" layoutY="410.0" VBox.vgrow="ALWAYS" AnchorPane.leftAnchor="100.0">
+            <children>
+                <Button fx:id="addBookButton" mnemonicParsing="false" onAction="#handleAddBookButton" text="Add Book"/>
+                <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#handleRefreshButton" text="Refresh"/>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
