@@ -24,10 +24,10 @@
                 <RowConstraints prefHeight="30.0" />
             </rowConstraints>
             <children>
-                <Label text="id" GridPane.rowIndex="0" />
-                <Label text="email" GridPane.rowIndex="1" />
-                <Label text="first name" GridPane.rowIndex="2" />
-                <Label text="last name" GridPane.rowIndex="3" />
+                <Label text="ID" GridPane.rowIndex="0" />
+                <Label text="Email" GridPane.rowIndex="1" />
+                <Label text="First Name" GridPane.rowIndex="2" />
+                <Label text="Last Name" GridPane.rowIndex="3" />
                 <Label text="Age" GridPane.rowIndex="4" />
                 <Label text="Phone" GridPane.rowIndex="5" />
                 <Label text="Role" GridPane.rowIndex="6" />

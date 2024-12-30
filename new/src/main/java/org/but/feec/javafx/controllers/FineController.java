@@ -34,6 +34,8 @@ public class FineController {
     @FXML
     public Button refreshButton;
     @FXML
+    public Button simulateButton;
+    @FXML
     private TableColumn<FineBasicView, Long> fineId;
     @FXML
     private TableColumn<FineBasicView, String> userId;
@@ -264,5 +266,27 @@ public class FineController {
         fineTableView.sort();
         filteredData = new FilteredList<>(observableFinesList, p -> true);
         fineTableView.setItems(filteredData);
+    }
+    @FXML
+    public void handleSimulateButton(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(App.class.getResource("fxml/SimulateAttack.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("BDS JavaFX Simulate Attack");
+
+            // Get the controller instance
+            SimulateAttackController controller = fxmlLoader.getController();
+
+            // Set the controller with any necessary data (optional)
+            // controller.setPersonsController(this);  // Pass the current instance if needed
+
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException ex) {
+            ExceptionHandler.handleException(ex);
+        }
     }
 }

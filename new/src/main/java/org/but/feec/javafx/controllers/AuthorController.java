@@ -33,6 +33,8 @@ public class AuthorController {
     @FXML
     public Button refreshButton;
     @FXML
+    public Button simulateButton;
+    @FXML
     private TableColumn<AuthorBasicView, Long> authorId;
     @FXML
     private TableColumn<AuthorBasicView, String> firstName;
@@ -249,5 +251,27 @@ public class AuthorController {
         filteredData = new FilteredList<>(observableAuthorsList, p -> true);
         systemAuthorsTableView.refresh();
         systemAuthorsTableView.sort();
+    }
+    @FXML
+    public void handleSimulateButton(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(App.class.getResource("fxml/SimulateAttack.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("BDS Database Simulate Attack");
+
+            // Get the controller instance
+            SimulateAttackController controller = fxmlLoader.getController();
+
+            // Set the controller with any necessary data (optional)
+            // controller.setPersonsController(this);  // Pass the current instance if needed
+
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException ex) {
+            ExceptionHandler.handleException(ex);
+        }
     }
 }

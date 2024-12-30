@@ -26,8 +26,6 @@ public class AuthService {
         if (personAuthView == null) {
             throw new ResourceNotFoundException("Provided username is not found.");
         }
-        System.out.println(personAuthView.getPassword());
-        System.out.println(password.toCharArray());
         return ARGON2.verify(personAuthView.getPassword(), password.toCharArray());
     }
 

@@ -8,23 +8,23 @@
             VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" fx:controller="org.but.feec.javafx.controllers.AuthorController">
     <children>
         <!-- Label for Search fields (above the Table) -->
-        <Label text="Search:" alignment="TOP_LEFT" textAlignment="CENTER" AnchorPane.topAnchor="72.0" AnchorPane.leftAnchor="48.0"/>
+        <Label text="Search:" alignment="TOP_LEFT" textAlignment="CENTER" AnchorPane.topAnchor="74.0" AnchorPane.leftAnchor="18.0"/>
 
         <!-- HBox for the search fields (above the Table) -->
-        <HBox spacing="2" alignment="CENTER_LEFT" AnchorPane.topAnchor="70.0" AnchorPane.leftAnchor="100.0" VBox.vgrow="ALWAYS">
+        <HBox spacing="2" alignment="CENTER_LEFT" AnchorPane.topAnchor="70.0" AnchorPane.leftAnchor="70.0" VBox.vgrow="ALWAYS">
             <children>
-                <TextField fx:id="searchIdField"  prefWidth="58.0"/>
-                <TextField fx:id="searchFirstNameField" prefWidth="98.0"/>
-                <TextField fx:id="searchLastNameField" prefWidth="98.0"/>
-                <TextField fx:id="searchCountryField" prefWidth="78.0"/>
-                <TextField fx:id="searchLanguageField" prefWidth="78.0"/>
-                <TextField fx:id="searchBornField" prefWidth="98.0"/>
-                <TextField fx:id="searchDeathField" prefWidth="98.0"/>
+                <TextField fx:id="searchIdField"  prefWidth="58.0" promptText="ID" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchFirstNameField" prefWidth="98.0" promptText="First Name" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchLastNameField" prefWidth="98.0" promptText="Last Name" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchCountryField" prefWidth="78.0" promptText="Country" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchLanguageField" prefWidth="85.0" promptText="Language" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchBornField" prefWidth="98.0" promptText="Born" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchDeathField" prefWidth="98.0" promptText="Death" style="-fx-alignment: center;"/>
             </children>
         </HBox>
 
         <!-- Adjusted TableView position to ensure it doesn't overlap with search fields -->
-        <TableView fx:id="systemAuthorsTableView" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" prefWidth="627" prefHeight="300.0" maxWidth="1000" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="100.0">
+        <TableView fx:id="systemAuthorsTableView" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" prefWidth="627" prefHeight="300.0" maxWidth="1000" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="70.0">
             <columns>
                 <TableColumn fx:id="authorId" minWidth="60.0" prefWidth="60" text="ID" style="-fx-alignment: center;"/>
                 <TableColumn fx:id="firstName" minWidth="100.0" prefWidth="100" text="First Name" style="-fx-alignment: center;"/>
@@ -37,11 +37,12 @@
         </TableView>
 
         <!-- Action buttons below table -->
-        <HBox spacing="10" alignment="CENTER_LEFT" layoutY="410.0" VBox.vgrow="ALWAYS" AnchorPane.leftAnchor="100.0">
+        <HBox spacing="10" alignment="CENTER_LEFT" layoutY="410.0" VBox.vgrow="ALWAYS" AnchorPane.leftAnchor="70.0">
             <children>
-                <Button fx:id="addAuthorButton" mnemonicParsing="false" onAction="#handleAddAuthorButton" text="Add Author"/>
+                <Button fx:id="addAuthorButton" mnemonicParsing="false" prefWidth="120" onAction="#handleAddAuthorButton" text="Add Author"/>
                 <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#handleRefreshButton" text="Refresh"/>
             </children>
         </HBox>
+        <Button fx:id="simulateButton" mnemonicParsing="false" onAction="#handleSimulateButton" text="Simulate Attacks" AnchorPane.topAnchor="500.0" AnchorPane.leftAnchor="600.0"/>
     </children>
 </AnchorPane>

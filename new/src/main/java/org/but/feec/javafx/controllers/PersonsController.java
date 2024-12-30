@@ -53,8 +53,6 @@ public class PersonsController {
     @FXML
     private TableView<PersonBasicView> systemPersonsTableView;
     @FXML
-    private ScrollPane contentScrollPane; // Reference to the ScrollPane that holds the content
-    @FXML
     private AnchorPane contentAnchorPane;
 
 
@@ -189,8 +187,8 @@ public class PersonsController {
 
 
     private void initializeTableViewSelection() {
-        MenuItem edit = new MenuItem("Edit person");
-        MenuItem detailedView = new MenuItem("Detailed person view");
+        MenuItem edit = new MenuItem("Edit user");
+        MenuItem detailedView = new MenuItem("Detailed user view");
         MenuItem delete = new MenuItem("Delete");
         edit.setOnAction((ActionEvent event) -> {
             PersonBasicView personView = systemPersonsTableView.getSelectionModel().getSelectedItem();
@@ -205,7 +203,7 @@ public class PersonsController {
 
                     // Create and configure the stage
                     Stage stage = new Stage();
-                    stage.setTitle("BDS JavaFX Edit Person");
+                    stage.setTitle("Edit User");
 
                     // Set the user data
                     stage.setUserData(personView);
@@ -240,7 +238,7 @@ public class PersonsController {
                 PersonDetailView personDetailView = personService.getPersonDetailView(personId);
 
                 stage.setUserData(personDetailView);
-                stage.setTitle("BDS JavaFX Persons Detailed View");
+                stage.setTitle("User Detailed View");
 
                 PersonsDetailViewController controller = new PersonsDetailViewController();
                 controller.setStage(stage);
@@ -319,7 +317,7 @@ public class PersonsController {
             fxmlLoader.setLocation(App.class.getResource("fxml/PersonsCreate.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 500);
             Stage stage = new Stage();
-            stage.setTitle("BDS JavaFX Create Person");
+            stage.setTitle("Create User");
 
             // Get the controller instance and pass this instance of PersonsController
             PersonCreateController controller = fxmlLoader.getController();
@@ -344,22 +342,27 @@ public class PersonsController {
         filteredData = new FilteredList<>(observablePersonsList, p -> true);
         systemPersonsTableView.setItems(filteredData);
     }
-    public void handleSimulateButton(ActionEvent actionEvent){
+    @FXML
+    public void handleSimulateButton(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(App.class.getResource("fxml/SimulateAttack.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
-            stage.setTitle("BDS JavaFX Create Person");
+            stage.setTitle("BDS Database Simulate Attack");
 
-            // Get the controller instance and pass this instance of PersonsController
+            // Get the controller instance
             SimulateAttackController controller = fxmlLoader.getController();
-            controller.setPersonsController(this);  // Pass the current instance of PersonsController
+
+            // Set the controller with any necessary data (optional)
+            // controller.setPersonsController(this);  // Pass the current instance if needed
 
             stage.setScene(scene);
             stage.show();
+
         } catch (IOException ex) {
             ExceptionHandler.handleException(ex);
         }
     }
+
 }

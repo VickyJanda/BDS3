@@ -42,7 +42,7 @@
                         <Insets left="5.0" />
                     </padding>
                 </Label>
-                <Label text="Main Language" GridPane.rowIndex="3">
+                <Label text="Language" GridPane.rowIndex="3">
                     <padding>
                         <Insets left="5.0" />
                     </padding>

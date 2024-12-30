@@ -10,36 +10,37 @@
             VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" fx:controller="org.but.feec.javafx.controllers.FineController">
     <children>
         <!-- Label for Search fields (above the Table) -->
-        <Label text="Search:" alignment="TOP_LEFT" textAlignment="CENTER" AnchorPane.topAnchor="72.0" AnchorPane.leftAnchor="18.0"/>
+        <Label text="Search:" alignment="TOP_LEFT" textAlignment="CENTER" AnchorPane.topAnchor="74.0" AnchorPane.leftAnchor="18.0"/>
 
         <!-- HBox for the search fields (above the Table) -->
         <HBox spacing="2" alignment="CENTER_LEFT" AnchorPane.topAnchor="70.0" AnchorPane.leftAnchor="70.0" VBox.vgrow="ALWAYS">
             <children>
-                <TextField fx:id="searchFineIdField" prefWidth="118.0" promptText="Fine ID"/>
-                <TextField fx:id="searchUserIdField" prefWidth="118.0" promptText="User ID"/>
-                <TextField fx:id="searchRentIdField" prefWidth="118.0" promptText="Rent ID"/>
-                <TextField fx:id="searchFineDueDateField" prefWidth="158.0" promptText="Fine Due Date"/>
-                <TextField fx:id="searchFineTotalField" prefWidth="158.0" promptText="Fine Total"/>
+                <TextField fx:id="searchFineIdField" prefWidth="118.0" promptText="Fine ID" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchUserIdField" prefWidth="118.0" promptText="User ID" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchRentIdField" prefWidth="118.0" promptText="Rent ID" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchFineDueDateField" prefWidth="158.0" promptText="Fine Due Date" style="-fx-alignment: center;"/>
+                <TextField fx:id="searchFineTotalField" prefWidth="118.0" promptText="Fine Total" style="-fx-alignment: center;"/>
             </children>
         </HBox>
 
         <!-- Adjusted TableView position to ensure it doesn't overlap with search fields -->
-        <TableView fx:id="fineTableView" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" prefWidth="777" prefHeight="300.0" maxWidth="1000" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="70.0">
+        <TableView fx:id="fineTableView" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" prefWidth="645" prefHeight="300.0" maxWidth="1000" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="70.0">
             <columns>
                 <TableColumn fx:id="fineId" minWidth="30.0" prefWidth="120" text="Fine ID" style="-fx-alignment: center;"/>
                 <TableColumn fx:id="userId" minWidth="75.0" prefWidth="120" text="User ID" style="-fx-alignment: center;"/>
                 <TableColumn fx:id="rentId" minWidth="75.0" prefWidth="120" text="User ID" style="-fx-alignment: center;"/>
                 <TableColumn fx:id="fineDueDate" minWidth="75.0" prefWidth="160" text="Fine Due Date" style="-fx-alignment: center;"/>
-                <TableColumn fx:id="fineTotal" minWidth="75.0" prefWidth="160" text="Fine Total" style="-fx-alignment: center;"/>
+                <TableColumn fx:id="fineTotal" minWidth="75.0" prefWidth="120" text="Fine Total" style="-fx-alignment: center;"/>
             </columns>
         </TableView>
 
         <!-- Action buttons below table -->
         <HBox spacing="10" alignment="CENTER_LEFT" layoutY="410.0" VBox.vgrow="ALWAYS" AnchorPane.leftAnchor="70.0">
             <children>
-                <Button fx:id="addFineButton" mnemonicParsing="false" onAction="#handleAddFineButton" text="Add Fine"/>
+                <Button fx:id="addFineButton" mnemonicParsing="false" prefWidth="120" onAction="#handleAddFineButton" text="Add Fine"/>
                 <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#handleRefreshButton" text="Refresh"/>
             </children>
         </HBox>
+        <Button fx:id="simulateButton" mnemonicParsing="false" onAction="#handleSimulateButton" text="Simulate Attacks" AnchorPane.topAnchor="500.0" AnchorPane.leftAnchor="600.0"/>
     </children>
 </AnchorPane>

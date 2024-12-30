@@ -34,6 +34,8 @@ public class BookController {
     @FXML
     public Button refreshButton;
     @FXML
+    public Button simulateButton;
+    @FXML
     private TableColumn<BookBasicView, Long> bookId;
     @FXML
     private TableColumn<BookBasicView, String> bookName;
@@ -279,5 +281,27 @@ public class BookController {
         systemBooksTableView.sort();
         filteredData = new FilteredList<>(observableBooksList, p -> true);
         systemBooksTableView.setItems(filteredData);
+    }
+    @FXML
+    public void handleSimulateButton(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(App.class.getResource("fxml/SimulateAttack.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("BDS JavaFX Simulate Attack");
+
+            // Get the controller instance
+            SimulateAttackController controller = fxmlLoader.getController();
+
+            // Set the controller with any necessary data (optional)
+            // controller.setPersonsController(this);  // Pass the current instance if needed
+
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException ex) {
+            ExceptionHandler.handleException(ex);
+        }
     }
 }

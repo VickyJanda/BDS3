@@ -32,6 +32,8 @@ public class LocationController {
     @FXML
     public Button refreshButton;
     @FXML
+    public Button simulateButton;
+    @FXML
     private TableColumn<LocationBasicView, Long> locationId;
     @FXML
     private TableColumn<LocationBasicView, String> locationCity;
@@ -258,5 +260,27 @@ public class LocationController {
         systemLocationsTableView.sort();
         filteredData = new FilteredList<>(observableLocationsList, p -> true);
         systemLocationsTableView.setItems(filteredData);
+    }
+    @FXML
+    public void handleSimulateButton(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(App.class.getResource("fxml/SimulateAttack.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("BDS JavaFX Simulate Attack");
+
+            // Get the controller instance
+            SimulateAttackController controller = fxmlLoader.getController();
+
+            // Set the controller with any necessary data (optional)
+            // controller.setPersonsController(this);  // Pass the current instance if needed
+
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException ex) {
+            ExceptionHandler.handleException(ex);
+        }
     }
 }

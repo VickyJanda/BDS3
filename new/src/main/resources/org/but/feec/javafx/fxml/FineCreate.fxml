@@ -28,22 +28,22 @@
                 <!-- Fine Fields -->
                 <Label text="User ID">
                     <padding>
-                        <Insets left="5.0" />
+                        <Insets left="3.0" />
                     </padding>
                 </Label>
                 <Label text="Rent ID" GridPane.rowIndex="1">
                     <padding>
-                        <Insets left="5.0" />
+                        <Insets left="3.0" />
                     </padding>
                 </Label>
                 <Label text="Fine Due Date" GridPane.rowIndex="2">
                     <padding>
-                        <Insets left="5.0" />
+                        <Insets left="3.0" />
                     </padding>
                 </Label>
                 <Label text="Fine Total" GridPane.rowIndex="3">
                     <padding>
-                        <Insets left="5.0" />
+                        <Insets left="3.0" />
                     </padding>
                 </Label>
 

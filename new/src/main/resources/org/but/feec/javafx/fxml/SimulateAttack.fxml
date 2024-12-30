@@ -13,6 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.control.TextField?>
 
+<?import javafx.scene.control.TextArea?>
 <VBox minHeight="625.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="org.but.feec.javafx.controllers.SimulateAttackController">
     <children>
@@ -22,30 +23,25 @@
                             VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
                     <children>
                         <Label text="DUMMY TABLE" AnchorPane.topAnchor="60.0" AnchorPane.leftAnchor="400.0" />
-                        <!-- Adjusted TableView position to ensure it doesn't overlap with search fields -->
-                        <TableView fx:id="systemPersonsTableView" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS"
-                                   prefWidth="602" prefHeight="300.0" maxWidth="1000" AnchorPane.topAnchor="100.0"
-                                   AnchorPane.leftAnchor="100.0">
-                            <columns>
-                                <TableColumn fx:id="personsId" minWidth="30.0" prefWidth="40" text="id"
-                                             style="-fx-alignment: center;"/>
-                                <TableColumn fx:id="personsEmail" minWidth="75.0" prefWidth="220" text="email"
-                                             style="-fx-alignment: center;"/>
-                                <TableColumn fx:id="personsGivenName" minWidth="75.0" prefWidth="100.0"
-                                             text="given name" style="-fx-alignment: center;"/>
-                                <TableColumn fx:id="personsFamilyName" minWidth="75.0" prefWidth="100.0"
-                                             text="family name" style="-fx-alignment: center;"/>
-                                <TableColumn fx:id="personsAge" minWidth="30.0" prefWidth="40" text="age"
-                                             style="-fx-alignment: center;"/>
-                                <TableColumn fx:id="personsPhoneNumber" minWidth="75.0" prefWidth="100.0" text="phone"
-                                             style="-fx-alignment: center;"/>
-                            </columns>
-                        </TableView>
                         <Label text="Type SQL to be executed:" AnchorPane.topAnchor="455.0" AnchorPane.leftAnchor="100.0" />
-                        <TextField fx:id="newPersonEmail" promptText="Your SQL querry" AnchorPane.topAnchor="450.0" AnchorPane.leftAnchor="320.0"/>
+
+                        <!-- Query Area -->
+                        <TextArea fx:id="queryArea" promptText="Enter your query here" prefHeight="200" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+
+                        <!-- Suggested Queries -->
+                        <TextArea fx:id="suggestedQueriesArea" promptText="Suggested queries..." prefHeight="400" prefWidth="300" editable="false"
+                                  AnchorPane.leftAnchor="625.0" AnchorPane.topAnchor="150.0" />
+
+                        <!-- Execute Buttons -->
+                        <Button fx:id="vulnerableButton" mnemonicParsing="false" onAction="#handleVulnerableButton" text="Execute query" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="650.0"/>
+                        <Button fx:id="safeButton" mnemonicParsing="false" onAction="#handleSafeButton" text="Execute query safely" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="650.0" />
+
+                        <!-- Result Area -->
+                        <TextArea fx:id="resultArea" promptText="Query results will appear here" prefHeight="200" editable="false" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="300.0" />
                     </children>
                 </AnchorPane>
             </content>
         </ScrollPane>
     </children>
 </VBox>
+

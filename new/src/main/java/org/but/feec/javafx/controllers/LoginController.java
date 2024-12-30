@@ -109,10 +109,8 @@ public class LoginController {
         try {
             boolean authenticated = authService.authenticate(username, password);
             if (authenticated) {
-                System.out.println("aut done");
                 showPersonsView();
             } else {
-                System.out.println("aut gon");
                 showInvalidPaswordDialog();
             }
         } catch (ResourceNotFoundException | DataAccessException e) {
@@ -126,14 +124,13 @@ public class LoginController {
             fxmlLoader.setLocation(App.class.getResource("fxml/Persons.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 1050, 600);
             Stage stage = new Stage();
-            stage.setTitle("BDS JavaFX Demo App");
+            stage.setTitle("BDS Database");
             stage.setScene(scene);
 
             Stage stageOld = (Stage) signInButton.getScene().getWindow();
             stageOld.close();
 
             stage.getIcons().add(new Image(App.class.getResourceAsStream("logos/vut.jpg")));
-            authConfirmDialog();
 
             stage.show();
         } catch (IOException ex) {
@@ -148,32 +145,6 @@ public class LoginController {
         alert.setContentText("Please provide a valid username and password");//ww  w . j  a  va2s  .  co  m
 
         alert.showAndWait();
-    }
-
-
-    private void authConfirmDialog() {
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("Logging confirmation");
-        alert.setHeaderText("You were successfully logged in.");
-
-        Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
-
-            @Override
-            public void handle(ActionEvent event) {
-                alert.setResult(ButtonType.CANCEL);
-                alert.hide();
-            }
-        }));
-        idlestage.setCycleCount(1);
-        idlestage.play();
-
-        Optional<ButtonType> result = alert.showAndWait();
-
-        if (result.get() == ButtonType.OK) {
-            System.out.println("ok clicked");
-        } else if (result.get() == ButtonType.CANCEL) {
-            System.out.println("cancel clicked");
-        }
     }
 
     public void handleOnEnterActionPassword(ActionEvent dragEvent) {
