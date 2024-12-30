@@ -33,15 +33,15 @@ public class PersonsDetailViewController {
     private TextField streetTextField;
 
     @FXML
-    private TextField ageTextField;  // Added to display age
+    private TextField ageTextField;
 
     @FXML
-    private TextField phoneNumberTextField;  // Added to display phone number
+    private TextField phoneNumberTextField;
 
     @FXML
     private TextField roleTextField;
 
-    // used to reference the stage and to get passed data through it
+
     public Stage stage;
 
     public void setStage(Stage stage) {

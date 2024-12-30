@@ -14,7 +14,7 @@ public class AuthorBasicView {
     private ObjectProperty<LocalDate> born = new SimpleObjectProperty<>();
     private ObjectProperty<LocalDate> death = new SimpleObjectProperty<>();
 
-    // Getter and setter methods for id
+
     public Long getId() {
         return idProperty().get();
     }
@@ -23,7 +23,7 @@ public class AuthorBasicView {
         this.idProperty().set(id);
     }
 
-    // Getter and setter methods for firstName
+
     public String getFirstName() {
         return firstNameProperty().get();
     }
@@ -32,7 +32,7 @@ public class AuthorBasicView {
         this.firstNameProperty().set(firstName);
     }
 
-    // Getter and setter methods for lastName
+
     public String getLastName() {
         return lastNameProperty().get();
     }
@@ -41,7 +41,7 @@ public class AuthorBasicView {
         this.lastNameProperty().set(lastName);
     }
 
-    // Getter and setter methods for country
+
     public String getCountry() {
         return countryProperty().get();
     }
@@ -50,7 +50,7 @@ public class AuthorBasicView {
         this.countryProperty().set(country);
     }
 
-    // Getter and setter methods for mainLanguage
+
     public String getMainLanguage() {
         return mainLanguageProperty().get();
     }
@@ -59,7 +59,7 @@ public class AuthorBasicView {
         this.mainLanguageProperty().set(mainLanguage);
     }
 
-    // Getter and setter methods for born
+
     public LocalDate getBorn() {
         return bornProperty().get();
     }
@@ -68,7 +68,7 @@ public class AuthorBasicView {
         this.bornProperty().set(born);
     }
 
-    // Getter and setter methods for death
+
     public LocalDate getDeath() {
         return deathProperty().get();
     }
@@ -77,7 +77,7 @@ public class AuthorBasicView {
         this.deathProperty().set(death);
     }
 
-    // Property accessors for each field
+
     public LongProperty idProperty() {
         return id;
     }

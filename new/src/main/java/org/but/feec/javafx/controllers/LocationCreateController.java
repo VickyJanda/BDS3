@@ -41,22 +41,22 @@ public class LocationCreateController {
     private LocationService locationService;
     private ValidationSupport validation;
 
-    private LocationController locationController;  // Store the reference to LocationController
+    private LocationController locationController;
 
-    // Setter for LocationController
+
     public void setLocationController(LocationController locationController) {
         this.locationController = locationController;
     }
 
     @FXML
     public void initialize() {
-        // Initialize LocationService with LocationRepository
+
         locationService = new LocationService(new LocationRepository());
 
-        // Initialize ValidationSupport
+
         validation = new ValidationSupport();
 
-        // Check if the controls are not null before applying validation
+
         if (newLocationCity != null) {
             validation.registerValidator(newLocationCity, Validator.createEmptyValidator("The city must not be empty."));
         }
@@ -73,7 +73,7 @@ public class LocationCreateController {
             validation.registerValidator(newLibraryId, Validator.createEmptyValidator("The library ID must not be empty."));
         }
 
-        // Disable the "Create Location" button if validation fails
+
         if (newLocationCreateButton != null) {
             newLocationCreateButton.disableProperty().bind(validation.invalidProperty());
         }
@@ -84,14 +84,14 @@ public class LocationCreateController {
     @FXML
     void handleCreateNewLocation(ActionEvent event) {
         try {
-            // Get the values from the text fields
+
             String city = newLocationCity.getText();
             String street = newLocationStreet.getText();
             String houseNumber = newLocationHouseNumber.getText();
             String zipCode = newLocationZipCode.getText();
             Long libraryId = Long.valueOf(newLibraryId.getText());
 
-            // Create the location view object
+
             LocationCreateView locationCreateView = new LocationCreateView();
             locationCreateView.setCity(city);
             locationCreateView.setStreet(street);
@@ -99,13 +99,13 @@ public class LocationCreateController {
             locationCreateView.setZipCode(zipCode);
             locationCreateView.setLibraryId(libraryId);
 
-            // Call the service to create the location
+
             locationService.createLocation(locationCreateView);
 
             locationCreatedConfirmationDialog();
         } catch (NumberFormatException e) {
             logger.error("Error parsing libraryId: " + e.getMessage());
-            // Show error alert for invalid inputs
+
             Alert alert = new Alert(Alert.AlertType.ERROR, "Please enter a valid number for library ID.", ButtonType.OK);
             alert.showAndWait();
         }
@@ -116,7 +116,7 @@ public class LocationCreateController {
         alert.setTitle("Location Created Confirmation");
         alert.setHeaderText("Your location was successfully created.");
 
-        // Close the dialog after 3 seconds
+
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -128,13 +128,13 @@ public class LocationCreateController {
         idlestage.play();
         Optional<ButtonType> result = alert.showAndWait();
 
-        // Close the window after the alert
+
         Stage stage = (Stage) newLocationCreateButton.getScene().getWindow();
         if (stage != null) {
             stage.close();
         }
 
-        // Call refresh() in LocationController after closing the window
+
         if (locationController != null) {
             locationController.refresh();
         }

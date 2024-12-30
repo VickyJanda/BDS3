@@ -6,8 +6,8 @@ public class PersonEditView {
     private String email;
     private String givenName;
     private String familyName;
-    private Integer age;  // Added age to align with the schema
-    private String phoneNumber;  // Added phone number to align with the schema
+    private Integer age;
+    private String phoneNumber;
 
     public Long getId() {
         return id;

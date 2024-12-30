@@ -9,7 +9,6 @@ public class LocationCreateView {
     private String houseNumber;
     private String zipCode;
 
-    // Getters and Setters for location attributes
 
     public Long getLocationId() {
         return locationId;

@@ -9,7 +9,6 @@ public class BookEditView {
     private Integer price;
     private Integer quantity;
 
-    // Getters and Setters for the book attributes
 
     public Long getId() {
         return id;

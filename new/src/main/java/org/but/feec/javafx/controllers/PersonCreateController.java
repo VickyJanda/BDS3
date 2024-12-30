@@ -48,16 +48,16 @@ public class PersonCreateController {
     private PersonService personService;
     private ValidationSupport validation;
 
-    private PersonsController personsController;  // Store the reference to PersonsController
+    private PersonsController personsController;
 
-    // Setter for PersonsController
+
     public void setPersonsController(PersonsController personsController) {
         this.personsController = personsController;
     }
 
     @FXML
     public void initialize() {
-        // Initialize PersonService with PersonRepository
+
         personService = new PersonService(new PersonRepository());
 
         validation = new ValidationSupport();
@@ -114,7 +114,7 @@ public class PersonCreateController {
         Stage stage = (Stage) newPersonCreatePerson.getScene().getWindow();
         stage.close();
 
-        // Call refresh() in PersonsController after closing the window
+
         if (personsController != null) {
             personsController.refresh();
         }

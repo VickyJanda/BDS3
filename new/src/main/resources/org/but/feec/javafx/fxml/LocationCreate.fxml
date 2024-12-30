@@ -24,7 +24,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <!-- Location Fields -->
+                
                 <Label text="Library ID">
                     <padding>
                         <Insets left="5.0" />
@@ -51,7 +51,7 @@
                     </padding>
                 </Label>
 
-                <!-- Location Input Fields -->
+                
                 <TextField fx:id="newLibraryId" promptText="Type library ID" GridPane.columnIndex="1" />
                 <TextField fx:id="newLocationCity" promptText="Type city" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField fx:id="newLocationStreet" promptText="Type street" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -60,7 +60,7 @@
             </children>
         </GridPane>
 
-        <!-- Create Location Button -->
+        
         <Button fx:id="newLocationCreateButton" layoutX="400.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleCreateNewLocation" text="Create Location" />
     </children>
 </AnchorPane>

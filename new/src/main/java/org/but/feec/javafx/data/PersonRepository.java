@@ -40,7 +40,7 @@ public class PersonRepository {
     public PersonDetailView findPersonDetailedView(Long personId) {
         try (Connection connection = DataSourceConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(
-                     "SELECT p.user_id, p.email, p.first_name, p.last_name, p.age, p.phone_number, r.role " +  // Updated query
+                     "SELECT p.user_id, p.email, p.first_name, p.last_name, p.age, p.phone_number, r.role " +
                              "FROM mydb.user p " +
                              "JOIN mydb.user_has_role ur ON p.user_id = ur.user_id " +
                              "JOIN mydb.role r ON ur.role_id = r.role_id " +
@@ -71,7 +71,7 @@ public class PersonRepository {
     public List<PersonBasicView> getPersonsBasicView() {
         try (Connection connection = DataSourceConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(
-                     "SELECT user_id, first_name, last_name, email, age, phone_number " +  // Updated query
+                     "SELECT user_id, first_name, last_name, email, age, phone_number " +
                              "FROM mydb.user ORDER BY user_id")) {
             ResultSet resultSet = preparedStatement.executeQuery();
             List<PersonBasicView> personBasicViews = new ArrayList<>();
@@ -134,10 +134,10 @@ public class PersonRepository {
 
     private PersonBasicView mapToPersonBasicView(ResultSet rs) throws SQLException {
         PersonBasicView personBasicView = new PersonBasicView();
-        personBasicView.setId(rs.getLong("user_id"));  // Corrected column name
+        personBasicView.setId(rs.getLong("user_id"));
         personBasicView.setEmail(rs.getString("email"));
-        personBasicView.setGivenName(rs.getString("first_name"));  // Corrected column name
-        personBasicView.setFamilyName(rs.getString("last_name"));  // Corrected column name
+        personBasicView.setGivenName(rs.getString("first_name"));
+        personBasicView.setFamilyName(rs.getString("last_name"));
         personBasicView.setAge(rs.getString("age"));
         personBasicView.setPhoneNumber(rs.getString("phone_number"));
         return personBasicView;
@@ -145,13 +145,13 @@ public class PersonRepository {
 
     private PersonDetailView mapToPersonDetailView(ResultSet rs) throws SQLException {
         PersonDetailView personDetailView = new PersonDetailView();
-        personDetailView.setId(rs.getLong("user_id"));  // Corrected column name
+        personDetailView.setId(rs.getLong("user_id"));
         personDetailView.setEmail(rs.getString("email"));
-        personDetailView.setGivenName(rs.getString("first_name"));  // Corrected column name
-        personDetailView.setFamilyName(rs.getString("last_name"));  // Corrected column name
-        personDetailView.setAge(rs.getString("age"));  // Corrected column name
-        personDetailView.setPhoneNumber(rs.getString("phone_number"));  // Corrected column name
-        personDetailView.setRole(rs.getString("role"));  // Corrected column name
+        personDetailView.setGivenName(rs.getString("first_name"));
+        personDetailView.setFamilyName(rs.getString("last_name"));
+        personDetailView.setAge(rs.getString("age"));
+        personDetailView.setPhoneNumber(rs.getString("phone_number"));
+        personDetailView.setRole(rs.getString("role"));
         return personDetailView;
     }
 }

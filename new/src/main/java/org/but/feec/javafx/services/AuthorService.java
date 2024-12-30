@@ -23,7 +23,7 @@ public class AuthorService {
     }
 
     public void createAuthor(AuthorCreateView authorCreateView) {
-        // Any additional business logic before saving the author can be added here
+
         authorRepository.createAuthor(authorCreateView);
     }
 

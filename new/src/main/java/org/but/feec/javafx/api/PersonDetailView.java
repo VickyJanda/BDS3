@@ -7,7 +7,7 @@ public class PersonDetailView {
     private StringProperty email = new SimpleStringProperty();
     private StringProperty givenName = new SimpleStringProperty();
     private StringProperty familyName = new SimpleStringProperty();
-    private StringProperty age = new SimpleStringProperty();  // Changed to match schema
+    private StringProperty age = new SimpleStringProperty();
     private StringProperty phoneNumber = new SimpleStringProperty();
     private StringProperty role = new SimpleStringProperty();
 
@@ -67,7 +67,7 @@ public class PersonDetailView {
         this.roleProperty().setValue(role);
     }
 
-    // Property accessors
+
     public LongProperty idProperty() {
         return id;
     }
@@ -91,6 +91,7 @@ public class PersonDetailView {
     public StringProperty phoneNumberProperty() {
         return phoneNumber;
     }
+
     public StringProperty roleProperty() {
         return role;
     }

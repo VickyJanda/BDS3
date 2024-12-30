@@ -17,7 +17,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Optional;
 
 public class FineCreateController {
@@ -38,22 +37,22 @@ public class FineCreateController {
     private FineService fineService;
     private ValidationSupport validation;
 
-    private FineController fineController;  // Store the reference to FineController
+    private FineController fineController;
 
-    // Setter for FineController
+
     public void setFineController(FineController fineController) {
         this.fineController = fineController;
     }
 
     @FXML
     public void initialize() {
-        // Initialize FineService with FineRepository
-        fineService = new FineService(new FineRepository());  // Provide the required argument here
 
-        // Initialize ValidationSupport
+        fineService = new FineService(new FineRepository());
+
+
         validation = new ValidationSupport();
 
-        // Check if the controls are not null before applying validation
+
         if (newUserId != null) {
             validation.registerValidator(newUserId, Validator.createEmptyValidator("The user ID must not be empty."));
         }
@@ -67,7 +66,7 @@ public class FineCreateController {
             validation.registerValidator(newFineDueDate, Validator.createEmptyValidator("The fine due date must not be empty."));
         }
 
-        // Disable the "Create Fine" button if validation fails
+
         if (createFineButton != null) {
             createFineButton.disableProperty().bind(validation.invalidProperty());
         }
@@ -78,34 +77,33 @@ public class FineCreateController {
     @FXML
     void handleCreateFine(ActionEvent event) {
         try {
-            // Get the values from the text fields
+
             Long userId = Long.valueOf(newUserId.getText());
             Long rentId = Long.valueOf(newRentId.getText());
             Double fineTotal = Double.valueOf(newFineTotal.getText());
 
-            // Get the fine due date from the DatePicker
+
             LocalDate fineDueDate = null;
             if (newFineDueDate.getValue() != null) {
-                fineDueDate = newFineDueDate.getValue();  // No need for formatting, just use LocalDate
+                fineDueDate = newFineDueDate.getValue();
             }
 
-            // Create the fine view object
+
             FineCreateView fineCreateView = new FineCreateView();
             fineCreateView.setUserId(userId);
             fineCreateView.setRentId(rentId);
             fineCreateView.setFineTotal(fineTotal);
 
-            // Convert LocalDate to String in the expected format
-            fineCreateView.setFineDueDate(fineDueDate); // Assuming fineDueDate is already a LocalDate
+
+            fineCreateView.setFineDueDate(fineDueDate);
 
 
-            // Call the service to create the fine
             fineService.createFine(fineCreateView);
 
             fineCreatedConfirmationDialog();
         } catch (NumberFormatException e) {
             logger.error("Error parsing fine ID, user ID, rent ID, fine total: " + e.getMessage());
-            // Show error alert for invalid inputs
+
             Alert alert = new Alert(Alert.AlertType.ERROR, "Please enter valid numbers for fine ID, user ID, rent ID, and fine total.", ButtonType.OK);
             alert.showAndWait();
         }
@@ -116,7 +114,7 @@ public class FineCreateController {
         alert.setTitle("Fine Created Confirmation");
         alert.setHeaderText("Your fine was successfully created.");
 
-        // Close the dialog after 3 seconds
+
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -128,13 +126,13 @@ public class FineCreateController {
         idlestage.play();
         Optional<ButtonType> result = alert.showAndWait();
 
-        // Close the window after the alert
+
         Stage stage = (Stage) createFineButton.getScene().getWindow();
         if (stage != null) {
             stage.close();
         }
 
-        // Call refresh() in FineController after closing the window
+
         if (fineController != null) {
             fineController.refresh();
         }

@@ -30,7 +30,7 @@ public class LocationEditController {
     @FXML
     public Button editLocationButton;
     @FXML
-    public TextField locationIdTextField; // This is the unique location ID
+    public TextField locationIdTextField;
     @FXML
     private TextField cityTextField;
     @FXML
@@ -40,13 +40,13 @@ public class LocationEditController {
     @FXML
     private TextField zipCodeTextField;
     @FXML
-    private TextField libraryIdTextField; // This is the associated library ID
+    private TextField libraryIdTextField;
 
     private LocationService locationService;
     private LocationRepository locationRepository;
     private ValidationSupport validation;
 
-    // Used to reference the stage and to get passed data through it
+
     public Stage stage;
 
     public void setStage(Stage stage) {
@@ -69,7 +69,7 @@ public class LocationEditController {
         }
 
         validation = new ValidationSupport();
-        locationIdTextField.setEditable(false);  // ID should not be editable
+        locationIdTextField.setEditable(false);
         validation.registerValidator(cityTextField, Validator.createEmptyValidator("The city must not be empty."));
         validation.registerValidator(streetTextField, Validator.createEmptyValidator("The street must not be empty."));
         validation.registerValidator(houseNumberTextField, Validator.createEmptyValidator("The house number must not be empty."));
@@ -90,12 +90,12 @@ public class LocationEditController {
         }
         if (stage.getUserData() instanceof LocationBasicView) {
             LocationBasicView locationBasicView = (LocationBasicView) stage.getUserData();
-            locationIdTextField.setText(String.valueOf(locationBasicView.getLocationId()));  // Set the Location ID
+            locationIdTextField.setText(String.valueOf(locationBasicView.getLocationId()));
             cityTextField.setText(locationBasicView.getCity());
             streetTextField.setText(locationBasicView.getStreet());
             houseNumberTextField.setText(locationBasicView.getHouseNumber());
             zipCodeTextField.setText(locationBasicView.getZipCode());
-            libraryIdTextField.setText(String.valueOf(locationBasicView.getLibraryId()));  // Set the Library ID
+            libraryIdTextField.setText(String.valueOf(locationBasicView.getLibraryId()));
         } else {
             logger.error("Stage user data is not an instance of LocationBasicView.");
         }
@@ -103,15 +103,15 @@ public class LocationEditController {
 
     @FXML
     public void handleEditLocationButton(ActionEvent event) {
-        // Extract the ID and other fields from the text fields
-        Long locationId = Long.valueOf(locationIdTextField.getText());  // This is the unique location ID
+
+        Long locationId = Long.valueOf(locationIdTextField.getText());
         String city = cityTextField.getText();
         String street = streetTextField.getText();
         String houseNumber = houseNumberTextField.getText();
         String zipCode = zipCodeTextField.getText();
-        Long libraryId = Long.valueOf(libraryIdTextField.getText());  // The associated library ID
+        Long libraryId = Long.valueOf(libraryIdTextField.getText());
 
-        // Create the LocationEditView with the updated data
+
         LocationEditView locationEditView = new LocationEditView();
         locationEditView.setLocationId(locationId);
         locationEditView.setCity(city);
@@ -120,10 +120,10 @@ public class LocationEditController {
         locationEditView.setZipCode(zipCode);
         locationEditView.setLibraryId(libraryId);
 
-        // Call the service to edit the location
+
         locationService.editLocation(locationEditView);
 
-        // Show confirmation dialog
+
         locationEditedConfirmationDialog();
     }
 
@@ -132,7 +132,7 @@ public class LocationEditController {
         alert.setTitle("Location Edited Confirmation");
         alert.setHeaderText("Your location was successfully edited.");
 
-        // Close the dialog after 3 seconds
+
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -144,7 +144,7 @@ public class LocationEditController {
         idlestage.play();
         Optional<ButtonType> result = alert.showAndWait();
 
-        // Close the stage
+
         Stage stage = (Stage) editLocationButton.getScene().getWindow();
         stage.close();
     }

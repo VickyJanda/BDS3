@@ -56,22 +56,22 @@ public class FineEditController {
 
     @FXML
     public void initialize() {
-        fineRepository = new FineRepository();  // FineRepository is initialized here.
-        fineService = new FineService(fineRepository); // Pass it to the FineService
+        fineRepository = new FineRepository();
+        fineService = new FineService(fineRepository);
 
         validation = new ValidationSupport();
-        fineIdTextField.setEditable(false); // Fine ID shouldn't be editable
+        fineIdTextField.setEditable(false);
 
-        // Register validators for fields
+
         validation.registerValidator(userIdTextField, Validator.createEmptyValidator("The user ID must not be empty."));
         validation.registerValidator(rentIdTextField, Validator.createEmptyValidator("The rent ID must not be empty."));
         validation.registerValidator(fineTotalTextField, Validator.createEmptyValidator("The fine total must not be empty."));
         validation.registerValidator(fineDueDatePicker, Validator.createEmptyValidator("The fine due date must not be empty."));
 
-        // Disable the button if the form is invalid
+
         editFineButton.disableProperty().bind(validation.invalidProperty());
 
-        // Delay loading the data to ensure everything is initialized
+
         Platform.runLater(this::loadFineData);
 
         logger.info("FineEditController initialized.");
@@ -86,16 +86,16 @@ public class FineEditController {
         if (stage.getUserData() instanceof FineEditView) {
             FineEditView fineEditView = (FineEditView) stage.getUserData();
 
-            // Log data passed to the controller for debugging
+
             logger.info("Loaded FineEditView: {}", fineEditView);
 
-            // Set the fields with values from the FineEditView
+
             fineIdTextField.setText(String.valueOf(fineEditView.getId()));
             userIdTextField.setText(String.valueOf(fineEditView.getUserId()));
             rentIdTextField.setText(String.valueOf(fineEditView.getRentId()));
             fineTotalTextField.setText(String.valueOf(fineEditView.getFineTotal()));
 
-            // Set the fine due date if available (only the date part)
+
             if (fineEditView.getFineDueDate() != null) {
                 try {
                     LocalDate fineDueDate = LocalDate.parse(fineEditView.getFineDueDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
@@ -114,30 +114,30 @@ public class FineEditController {
     @FXML
     public void handleEditFineButton(ActionEvent event) {
         try {
-            // Read the values from the text fields
+
             Long fineId = Long.valueOf(fineIdTextField.getText());
             Long userId = Long.valueOf(userIdTextField.getText());
             Long rentId = Long.valueOf(rentIdTextField.getText());
             Double fineTotal = Double.valueOf(fineTotalTextField.getText());
 
-            // Get the fine due date from DatePicker (LocalDate)
+
             String fineDueDate = null;
             if (fineDueDatePicker.getValue() != null) {
-                fineDueDate = fineDueDatePicker.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")); // Convert LocalDate to String
+                fineDueDate = fineDueDatePicker.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
             }
 
-            // Create the FineEditView object with the updated data
+
             FineEditView fineEditView = new FineEditView();
             fineEditView.setId(fineId);
             fineEditView.setUserId(userId);
             fineEditView.setRentId(rentId);
             fineEditView.setFineTotal(fineTotal);
-            fineEditView.setFineDueDate(fineDueDate); // Now passing String to the setter
+            fineEditView.setFineDueDate(fineDueDate);
 
-            // Call the service to update the fine
+
             fineService.editFine(fineEditView);
 
-            // Show confirmation dialog after successful edit
+
             fineEditedConfirmationDialog();
         } catch (NumberFormatException e) {
             logger.error("Invalid number format while editing fine: ", e);
@@ -149,7 +149,7 @@ public class FineEditController {
         alert.setTitle("Fine Edited Confirmation");
         alert.setHeaderText("The fine was successfully edited.");
 
-        // Hide the dialog after 3 seconds
+
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -161,7 +161,7 @@ public class FineEditController {
         idlestage.play();
         Optional<ButtonType> result = alert.showAndWait();
 
-        // Close the window
+
         Stage stage = (Stage) editFineButton.getScene().getWindow();
         stage.close();
     }

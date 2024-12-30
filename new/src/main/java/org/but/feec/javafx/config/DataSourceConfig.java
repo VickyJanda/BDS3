@@ -38,7 +38,7 @@ public class DataSourceConfig {
                 logger.error("Could not connect to the database.", e);
             }
         } else {
-            // get first command line argument pointing to the project configurations
+
             try (InputStream resourceStream = Files.newInputStream(Paths.get(args[0]))) {
                 initializeDataSource(resourceStream);
             } catch (IOException | NullPointerException | IllegalArgumentException e) {

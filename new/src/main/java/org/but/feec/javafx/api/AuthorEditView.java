@@ -12,7 +12,6 @@ public class AuthorEditView {
     private LocalDate born;
     private LocalDate death;
 
-    // Getters and Setters for the author attributes
 
     public Long getId() {
         return id;

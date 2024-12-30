@@ -14,7 +14,7 @@ public class LocationBasicView {
     private StringProperty houseNumber = new SimpleStringProperty();
     private StringProperty zipCode = new SimpleStringProperty();
 
-    // Getter and setter methods for locationId
+
     public Long getLocationId() {
         return locationIdProperty().get();
     }
@@ -23,7 +23,7 @@ public class LocationBasicView {
         this.locationIdProperty().setValue(locationId);
     }
 
-    // Getter and setter methods for libraryId
+
     public Long getLibraryId() {
         return libraryIdProperty().get();
     }
@@ -32,7 +32,7 @@ public class LocationBasicView {
         this.libraryIdProperty().setValue(libraryId);
     }
 
-    // Getter and setter methods for city
+
     public String getCity() {
         return cityProperty().get();
     }
@@ -41,7 +41,7 @@ public class LocationBasicView {
         this.cityProperty().setValue(city);
     }
 
-    // Getter and setter methods for street
+
     public String getStreet() {
         return streetProperty().get();
     }
@@ -50,7 +50,7 @@ public class LocationBasicView {
         this.streetProperty().setValue(street);
     }
 
-    // Getter and setter methods for houseNumber
+
     public String getHouseNumber() {
         return houseNumberProperty().get();
     }
@@ -59,7 +59,7 @@ public class LocationBasicView {
         this.houseNumberProperty().setValue(houseNumber);
     }
 
-    // Getter and setter methods for zipCode
+
     public String getZipCode() {
         return zipCodeProperty().get();
     }
@@ -68,7 +68,7 @@ public class LocationBasicView {
         this.zipCodeProperty().setValue(zipCode);
     }
 
-    // Property accessors for each field
+
     public LongProperty locationIdProperty() {
         return locationId;
     }

@@ -1,7 +1,5 @@
 package org.but.feec.javafx.api;
 
-import java.util.Arrays;
-
 public class BookCreateView {
 
     private String name;
@@ -10,7 +8,6 @@ public class BookCreateView {
     private Double price;
     private Integer quantity;
 
-    // Getters and Setters for the book attributes
 
     public String getName() {
         return name;

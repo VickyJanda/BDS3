@@ -63,7 +63,7 @@ public class PersonBasicView {
         this.phoneNumberProperty().setValue(PhoneNumber);
     }
 
-    // Property accessors
+
     public LongProperty idProperty() {
         return id;
     }

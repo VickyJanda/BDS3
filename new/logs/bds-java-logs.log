@@ -3222,3 +3222,283 @@ org.postgresql.util.PSQLException: The column name id was not found in this Resu
 162028 [JavaFX Application Thread] INFO  o.b.f.j.c.FineEditController - FineEditController initialized.
 162029 [JavaFX Application Thread] INFO  o.b.f.j.c.FineEditController - Stage successfully set in FineEditController.
 162042 [JavaFX Application Thread] ERROR o.b.f.j.c.FineEditController - Stage user data is not an instance of FineEditView.
+1414 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3084 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+7567 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+8161 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+8763 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+9260 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+9960 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+10849 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+11528 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorCreateController - AuthorCreateController initialized
+1380 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3755 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+1001 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+1156 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+13941 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table dropped successfully.
+1011 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+12017 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table dropped successfully.
+981  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+4999 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table dropped successfully.
+952  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3420 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+9015 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+9583 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+11045 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+11446 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+12751 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+13168 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+13569 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+14369 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+15135 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+15645 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+16060 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+16474 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+19247 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+21283 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+21765 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+25682 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+26202 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+27080 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+27554 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+29661 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+30137 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+32161 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+34936 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+36373 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+36784 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+37155 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+38339 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+38640 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+39902 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+42880 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+43385 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+43862 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+44724 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+45813 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+991  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3644 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+5070 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+6064 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+7486 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+7848 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+8333 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+8764 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+9195 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+9643 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+10348 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+10845 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+1012 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+4131 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+10631 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+10638 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Fake data inserted into dummy table.
+11811 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+11812 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+18935 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+18935 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+18939 [JavaFX Application Thread] ERROR o.b.f.j.c.SimulateAttackController - An error occurred during attack simulation (vulnerable).
+org.postgresql.util.PSQLException: No results were returned by the query.
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:267)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.but.feec.javafx.controllers.SimulateAttackController.executeVulnerableQuery(SimulateAttackController.java:140)
+	at org.but.feec.javafx.controllers.SimulateAttackController.handleVulnerableButton(SimulateAttackController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1853)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.scene.control.Button.fire(Button.java:203)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+982  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+3945 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+13437 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+13438 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+14936 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+14937 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+14942 [JavaFX Application Thread] ERROR o.b.f.j.c.SimulateAttackController - An error occurred during attack simulation (safe).
+org.postgresql.util.PSQLException: No results were returned by the query.
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:138)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.but.feec.javafx.controllers.SimulateAttackController.executeSafeQuery(SimulateAttackController.java:171)
+	at org.but.feec.javafx.controllers.SimulateAttackController.handleSafeButton(SimulateAttackController.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1853)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.scene.control.Button.fire(Button.java:203)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+16632 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+16633 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+998  [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+35091 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+42113 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+42114 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+42661 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+42661 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+48210 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+48210 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+67219 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+67220 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+73831 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+73831 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+82328 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+82329 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+90623 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+90624 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+91670 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+91671 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+106324 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+106325 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+110849 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+110850 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+155935 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+155936 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+156861 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+156862 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+164634 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+164635 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+1453 [JavaFX Application Thread] INFO  o.b.f.j.controllers.LoginController - LoginController initialized
+4659 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+9117 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+10472 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+11793 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+13413 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+16727 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+34280 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+34281 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+37555 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+37556 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+52679 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Dummy table created successfully.
+52680 [JavaFX Application Thread] INFO  o.b.f.j.c.SimulateAttackController - Data already exists in the dummy table.
+65645 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationCreateController - LocationCreateController initialized
+67686 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+69207 [JavaFX Application Thread] ERROR o.b.f.j.c.AuthorEditController - Stage is not set in AuthorEditController.
+69208 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorEditController - AuthorEditController initialized
+69210 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorEditController - Stage successfully set in AuthorEditController.
+75819 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+77875 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+78367 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized
+81522 [JavaFX Application Thread] INFO  o.b.f.j.c.AuthorController - AuthorController initialized
+82310 [JavaFX Application Thread] INFO  o.b.f.j.controllers.BookController - BookController initialized
+82660 [JavaFX Application Thread] INFO  o.b.f.j.c.PersonsController - PersonsController initialized
+83720 [JavaFX Application Thread] INFO  o.b.f.j.c.LocationController - LocationController initialized
+84307 [JavaFX Application Thread] INFO  o.b.f.j.controllers.FineController - FineController initialized

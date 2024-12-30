@@ -25,7 +25,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <!-- Location related Labels -->
+                
                 <Label text="Location ID">
                     <padding>
                         <Insets left="5.0" />
@@ -57,7 +57,7 @@
                     </padding>
                 </Label>
 
-                <!-- Location related TextFields -->
+                
                 <TextField fx:id="locationIdTextField" GridPane.columnIndex="1" />
                 <TextField fx:id="libraryIdTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField fx:id="cityTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -67,7 +67,7 @@
             </children>
         </GridPane>
 
-        <!-- Edit Location Button -->
+        
         <Button fx:id="editLocationButton" layoutX="400.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleEditLocationButton" text="Edit Location" />
     </children>
 </AnchorPane>

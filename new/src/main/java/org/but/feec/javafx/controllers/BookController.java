@@ -44,9 +44,9 @@ public class BookController {
     @FXML
     private TableColumn<BookBasicView, String> bookStatus;
     @FXML
-    private TableColumn<BookBasicView, Integer> bookPrice;  // Changed to Integer
+    private TableColumn<BookBasicView, Integer> bookPrice;
     @FXML
-    private TableColumn<BookBasicView, Integer> bookQuantity;  // Changed to Integer
+    private TableColumn<BookBasicView, Integer> bookQuantity;
     @FXML
     private TableView<BookBasicView> systemBooksTableView;
     @FXML
@@ -66,7 +66,7 @@ public class BookController {
         bookRepository = new BookRepository();
         bookService = new BookService(bookRepository);
 
-        // Initialize the table columns with book properties
+
         bookId.setCellValueFactory(new PropertyValueFactory<BookBasicView, Long>("id"));
         bookName.setCellValueFactory(new PropertyValueFactory<BookBasicView, String>("name"));
         bookIsbn.setCellValueFactory(new PropertyValueFactory<BookBasicView, String>("isbn"));
@@ -84,7 +84,7 @@ public class BookController {
         initializeTableViewSelection();
         loadIcons();
 
-        // Initialize search functionality
+
         setupSearch();
 
         logger.info("BookController initialized");
@@ -93,34 +93,33 @@ public class BookController {
     private FilteredList<BookBasicView> filteredData;
 
     private void setupSearch() {
-        // Create a FilteredList to hold filtered data
 
-        // Add listeners to search fields to filter data
+
         searchIdField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(book -> {
-                if (newValue.isEmpty()) return true; // If the field is empty, show all results
-                return book.getId().toString().contains(newValue); // Filter by ID
+                if (newValue.isEmpty()) return true;
+                return book.getId().toString().contains(newValue);
             });
         });
 
         searchNameField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(book -> {
                 if (newValue.isEmpty()) return true;
-                return book.getName().toLowerCase().contains(newValue.toLowerCase()); // Filter by name
+                return book.getName().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchIsbnField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(book -> {
                 if (newValue.isEmpty()) return true;
-                return book.getIsbn().toLowerCase().contains(newValue.toLowerCase()); // Filter by ISBN
+                return book.getIsbn().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchStatusField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(book -> {
                 if (newValue.isEmpty()) return true;
-                return book.getStatus().toLowerCase().contains(newValue.toLowerCase()); // Filter by status
+                return book.getStatus().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
@@ -128,10 +127,10 @@ public class BookController {
             filteredData.setPredicate(book -> {
                 if (newValue.isEmpty()) return true;
                 try {
-                    int price = Integer.parseInt(newValue); // Parse the price as an integer
-                    return book.getPrice() == price; // Filter by exact price match
+                    int price = Integer.parseInt(newValue);
+                    return book.getPrice() == price;
                 } catch (NumberFormatException e) {
-                    return false; // If the value is not a valid number, return false
+                    return false;
                 }
             });
         });
@@ -140,15 +139,15 @@ public class BookController {
             filteredData.setPredicate(book -> {
                 if (newValue.isEmpty()) return true;
                 try {
-                    int quantity = Integer.parseInt(newValue); // Parse the quantity as an integer
-                    return book.getQuantity() == quantity; // Filter by exact quantity match
+                    int quantity = Integer.parseInt(newValue);
+                    return book.getQuantity() == quantity;
                 } catch (NumberFormatException e) {
-                    return false; // If the value is not a valid number, return false
+                    return false;
                 }
             });
         });
 
-        // Bind the filtered data to the table's items property
+
         SortedList<BookBasicView> sortedData = new SortedList<>(filteredData);
         sortedData.comparatorProperty().bind(systemBooksTableView.comparatorProperty());
         systemBooksTableView.setItems(sortedData);
@@ -158,7 +157,7 @@ public class BookController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/but/feec/javafx/fxml/" + fxml));
             AnchorPane newContent = loader.load();
-            contentAnchorPane.getChildren().setAll(newContent); // Replace the current content
+            contentAnchorPane.getChildren().setAll(newContent);
         } catch (IOException e) {
             e.printStackTrace();
             logger.error("Error loading FXML: " + fxml, e);
@@ -167,12 +166,12 @@ public class BookController {
 
     @FXML
     private void handleSwitchUserButton() {
-        loadNewContent("UserTable.fxml"); // Load user table content
+        loadNewContent("UserTable.fxml");
     }
 
     @FXML
     private void handleSwitchBookButton() {
-        loadNewContent("BookTable.fxml"); // Load library table content
+        loadNewContent("BookTable.fxml");
     }
 
     private void initializeTableViewSelection() {
@@ -186,7 +185,7 @@ public class BookController {
                     FXMLLoader fxmlLoader = new FXMLLoader();
                     fxmlLoader.setLocation(App.class.getResource("fxml/BookEdit.fxml"));
 
-                    // Load the FXML and get the controller
+
                     Scene scene = new Scene(fxmlLoader.load(), 600, 500);
                     BookEditController controller = fxmlLoader.getController();
 
@@ -247,7 +246,7 @@ public class BookController {
         alert.setHeaderText(header);
         alert.setContentText(content);
 
-        // Set the owner to center the alert
+
         Stage stage = (Stage) contentAnchorPane.getScene().getWindow();
         alert.initOwner(stage);
 
@@ -282,6 +281,7 @@ public class BookController {
         filteredData = new FilteredList<>(observableBooksList, p -> true);
         systemBooksTableView.setItems(filteredData);
     }
+
     @FXML
     public void handleSimulateButton(ActionEvent actionEvent) {
         try {
@@ -291,11 +291,9 @@ public class BookController {
             Stage stage = new Stage();
             stage.setTitle("BDS JavaFX Simulate Attack");
 
-            // Get the controller instance
+
             SimulateAttackController controller = fxmlLoader.getController();
 
-            // Set the controller with any necessary data (optional)
-            // controller.setPersonsController(this);  // Pass the current instance if needed
 
             stage.setScene(scene);
             stage.show();

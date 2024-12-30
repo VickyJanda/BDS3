@@ -43,15 +43,15 @@ public class AuthorEditController {
     @FXML
     private TextField mainLanguageTextField;
     @FXML
-    private DatePicker authorBornDatePicker;  // Change to DatePicker
+    private DatePicker authorBornDatePicker;
     @FXML
-    private DatePicker authorDeathDatePicker;  // Change to DatePicker
+    private DatePicker authorDeathDatePicker;
 
     private AuthorService authorService;
     private AuthorRepository authorRepository;
     private ValidationSupport validation;
 
-    // used to reference the stage and to get passed data through it
+
     public Stage stage;
 
     public void setStage(Stage stage) {
@@ -99,7 +99,7 @@ public class AuthorEditController {
             lastNameTextField.setText(authorBasicView.getLastName());
             countryTextField.setText(authorBasicView.getCountry());
             mainLanguageTextField.setText(authorBasicView.getMainLanguage());
-            // Set DatePicker values
+
             authorBornDatePicker.setValue(authorBasicView.getBorn() != null ? authorBasicView.getBorn() : null);
             authorDeathDatePicker.setValue(authorBasicView.getDeath() != null ? authorBasicView.getDeath() : null);
         } else {
@@ -115,7 +115,7 @@ public class AuthorEditController {
         String country = countryTextField.getText();
         String mainLanguage = mainLanguageTextField.getText();
 
-        // Get dates from DatePicker
+
         LocalDate born = authorBornDatePicker.getValue();
         LocalDate death = authorDeathDatePicker.getValue();
 
@@ -125,8 +125,8 @@ public class AuthorEditController {
         authorEditView.setLastName(lastName);
         authorEditView.setCountry(country);
         authorEditView.setMainLanguage(mainLanguage);
-        authorEditView.setBorn(born);  // Directly assign LocalDate
-        authorEditView.setDeath(death);  // Directly assign LocalDate
+        authorEditView.setBorn(born);
+        authorEditView.setDeath(death);
 
         authorService.editAuthor(authorEditView);
 
@@ -139,13 +139,13 @@ public class AuthorEditController {
         alert.setTitle("Author Edited Confirmation");
         alert.setHeaderText("Your author was successfully edited.");
 
-        // Set the owner to the current stage
+
         alert.initOwner(stage);
 
-        // Center the dialog on the screen
+
         alert.initModality(Modality.APPLICATION_MODAL);
 
-        // Close the dialog after 3 seconds
+
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

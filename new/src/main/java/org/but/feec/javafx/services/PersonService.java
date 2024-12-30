@@ -30,7 +30,7 @@ public class PersonService {
     }
 
     public void createPerson(PersonCreateView personCreateView) {
-        // the following three lines can be written in one code line (only for more clear explanation it is written in three lines
+
         char[] originalPassword = personCreateView.getPwd();
         char[] hashedPassword = hashPassword(originalPassword);
         personCreateView.setPwd(hashedPassword);
@@ -44,7 +44,7 @@ public class PersonService {
 
     /**
      * <p>
-     * Note: For implementation details see: https://github.com/phxql/argon2-jvm
+     * Note: For implementation details see: https:
      * </p>
      *
      * @param password to be hashed

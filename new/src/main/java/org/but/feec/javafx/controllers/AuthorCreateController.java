@@ -41,22 +41,22 @@ public class AuthorCreateController {
     private AuthorService authorService;
     private ValidationSupport validation;
 
-    private AuthorController authorController;  // Store the reference to AuthorController
+    private AuthorController authorController;
 
-    // Setter for AuthorController
+
     public void setAuthorController(AuthorController authorController) {
         this.authorController = authorController;
     }
 
     @FXML
     public void initialize() {
-        // Initialize AuthorService with AuthorRepository
+
         authorService = new AuthorService(new AuthorRepository());
 
-        // Initialize ValidationSupport
+
         validation = new ValidationSupport();
 
-        // Check if the controls are not null before applying validation
+
         if (newAuthorFirstName != null) {
             validation.registerValidator(newAuthorFirstName, Validator.createEmptyValidator("The first name must not be empty."));
         }
@@ -70,7 +70,7 @@ public class AuthorCreateController {
             validation.registerValidator(newAuthorMainLanguage, Validator.createEmptyValidator("The main language must not be empty."));
         }
 
-        // Disable the "Create Author" button if validation fails
+
         if (newAuthorCreateButton != null) {
             newAuthorCreateButton.disableProperty().bind(validation.invalidProperty());
         }
@@ -81,17 +81,17 @@ public class AuthorCreateController {
     @FXML
     void handleCreateNewAuthor(ActionEvent event) {
         try {
-            // Get the values from the text fields
+
             String firstName = newAuthorFirstName.getText();
             String lastName = newAuthorLastName.getText();
             String country = newAuthorCountry.getText();
             String mainLanguage = newAuthorMainLanguage.getText();
 
-            // Use getValue() to get the LocalDate from the DatePicker
+
             LocalDate born = newAuthorBorn.getValue();
             LocalDate death = newAuthorDeath.getValue();
 
-            // Create the author view object
+
             AuthorCreateView authorCreateView = new AuthorCreateView();
             authorCreateView.setFirstName(firstName);
             authorCreateView.setLastName(lastName);
@@ -100,13 +100,13 @@ public class AuthorCreateController {
             authorCreateView.setBorn(born);
             authorCreateView.setDeath(death);
 
-            // Call the service to create the author
+
             authorService.createAuthor(authorCreateView);
 
             authorCreatedConfirmationDialog();
         } catch (Exception e) {
             logger.error("Error creating author: " + e.getMessage());
-            // Show error alert for any unexpected errors
+
             Alert alert = new Alert(Alert.AlertType.ERROR, "There was an error creating the author. Please try again.", ButtonType.OK);
             alert.showAndWait();
         }
@@ -117,7 +117,7 @@ public class AuthorCreateController {
         alert.setTitle("Author Created Confirmation");
         alert.setHeaderText("The author was successfully created.");
 
-        // Close the dialog after 3 seconds
+
         Timeline idlestage = new Timeline(new KeyFrame(Duration.seconds(3), event -> {
             alert.setResult(ButtonType.CANCEL);
             alert.hide();
@@ -126,13 +126,13 @@ public class AuthorCreateController {
         idlestage.play();
         Optional<ButtonType> result = alert.showAndWait();
 
-        // Close the window after the alert
+
         Stage stage = (Stage) newAuthorCreateButton.getScene().getWindow();
         if (stage != null) {
             stage.close();
         }
 
-        // Call refresh() in AuthorController after closing the window
+
         if (authorController != null) {
             authorController.refresh();
         }

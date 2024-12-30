@@ -14,26 +14,26 @@ public class SimulateAttackController {
     private static final Logger logger = LoggerFactory.getLogger(SimulateAttackController.class);
 
     @FXML
-    private TextArea queryArea;  // Where the user enters queries
+    private TextArea queryArea;
     @FXML
-    private TextArea resultArea; // Where query results are displayed
+    private TextArea resultArea;
 
     @FXML
     public void handleVulnerableButton(ActionEvent event) {
         try {
-            // Create the dummy table
+
             createDummyTable();
 
-            // Insert fake data
+
             insertFakeData();
 
-            // Get the query entered by the user
+
             String query = queryArea.getText();
 
-            // Execute the vulnerable query (direct SQL)
+
             String result = executeVulnerableQuery(query);
 
-            // Display the result in the result area
+
             resultArea.setText(result);
 
         } catch (SQLException e) {
@@ -45,19 +45,19 @@ public class SimulateAttackController {
     @FXML
     public void handleSafeButton(ActionEvent event) {
         try {
-            // Create the dummy table
+
             createDummyTable();
 
-            // Insert fake data
+
             insertFakeData();
 
-            // Get the query entered by the user
+
             String query = queryArea.getText();
 
-            // Execute the safe query (using prepared statement)
+
             String result = executeSafeQuery(query);
 
-            // Display the result in the result area
+
             resultArea.setText(result);
 
         } catch (SQLException e) {
@@ -72,12 +72,12 @@ public class SimulateAttackController {
     @FXML
     public void initialize() {
         String suggestedQueries = """
-            Suggested queries:
-            
-            SELECT * FROM dummy_table;
-            INSERT INTO dummy_table (name, email, age) VALUES ('Alice', 'alice@example.com', 28);
-            DELETE FROM dummy_table WHERE id = 1;
-            """;
+                Suggested queries:
+                
+                SELECT * FROM dummy_table;
+                INSERT INTO dummy_table (name, email, age) VALUES ('Alice', 'alice@example.com', 28);
+                DELETE FROM dummy_table WHERE id = 1;
+                """;
         suggestedQueriesArea.setText(suggestedQueries);
     }
 
@@ -98,18 +98,18 @@ public class SimulateAttackController {
     }
 
     private void insertFakeData() throws SQLException {
-        String checkDataSQL = "SELECT COUNT(*) FROM mydb.dummy_table"; // Check if data exists
+        String checkDataSQL = "SELECT COUNT(*) FROM mydb.dummy_table";
         String insertDataSQL = "INSERT INTO mydb.dummy_table (name, email, age) VALUES (?, ?, ?)";
 
         try (Connection conn = DataSourceConfig.getConnection();
              Statement stmt = conn.createStatement()) {
 
-            // Check if data already exists in the table
+
             ResultSet rs = stmt.executeQuery(checkDataSQL);
-            if (rs.next() && rs.getInt(1) == 0) { // No data exists
-                // Insert fake data only if the table is empty
+            if (rs.next() && rs.getInt(1) == 0) {
+
                 try (PreparedStatement pstmt = conn.prepareStatement(insertDataSQL)) {
-                    // Insert fake data
+
                     pstmt.setString(1, "John Doe");
                     pstmt.setString(2, "john.doe@example.com");
                     pstmt.setInt(3, 25);
@@ -133,36 +133,15 @@ public class SimulateAttackController {
         try (Connection conn = DataSourceConfig.getConnection();
              Statement stmt = conn.createStatement()) {
 
-            // Set the schema search path to your schema (e.g., 'mydb')
             stmt.execute("SET search_path TO mydb");
 
-            // Execute the query
-            try (ResultSet rs = stmt.executeQuery(query)) {
-                while (rs.next()) {
-                    result.append("ID: ").append(rs.getInt("id"))
-                            .append(", Name: ").append(rs.getString("name"))
-                            .append(", Email: ").append(rs.getString("email"))
-                            .append(", Age: ").append(rs.getInt("age"))
-                            .append("\n");
-                }
-            }
-        }
-        return result.toString();
-    }
+            if (query.trim().startsWith("INSERT") || query.trim().startsWith("UPDATE") || query.trim().startsWith("DELETE")) {
 
+                int rowsAffected = stmt.executeUpdate(query);
+                result.append(rowsAffected).append(" row(s) affected.\n");
+            } else {
 
-    private String executeSafeQuery(String query) throws SQLException {
-        StringBuilder result = new StringBuilder();
-        try (Connection conn = DataSourceConfig.getConnection();
-             Statement stmt = conn.createStatement()) {
-
-            // Set the schema search path to your schema (e.g., 'mydb')
-            stmt.execute("SET search_path TO mydb");
-
-            // Use prepared statement for safe query execution
-            try (PreparedStatement pstmt = conn.prepareStatement(query)) {
-                // Execute the query
-                try (ResultSet rs = pstmt.executeQuery()) {
+                try (ResultSet rs = stmt.executeQuery(query)) {
                     while (rs.next()) {
                         result.append("ID: ").append(rs.getInt("id"))
                                 .append(", Name: ").append(rs.getString("name"))
@@ -175,6 +154,35 @@ public class SimulateAttackController {
         }
         return result.toString();
     }
+
+
+
+    private String executeSafeQuery(String query) throws SQLException {
+        StringBuilder result = new StringBuilder();
+        try (Connection conn = DataSourceConfig.getConnection();
+             Statement stmt = conn.createStatement()) {
+
+            stmt.execute("SET search_path TO mydb");
+
+            if (query.trim().startsWith("INSERT") || query.trim().startsWith("UPDATE") || query.trim().startsWith("DELETE")) {
+                int rowsAffected = stmt.executeUpdate(query);
+                result.append(rowsAffected).append(" row(s) affected.\n");
+            } else {
+                try (ResultSet rs = stmt.executeQuery(query)) {
+                    while (rs.next()) {
+                        result.append("ID: ").append(rs.getInt("id"))
+                                .append(", Name: ").append(rs.getString("name"))
+                                .append(", Email: ").append(rs.getString("email"))
+                                .append(", Age: ").append(rs.getInt("age"))
+                                .append("\n");
+                    }
+                }
+            }
+        }
+        return result.toString();
+    }
+
+
     public static void dropDummyTable() throws SQLException {
         String dropTableSQL = "DROP TABLE IF EXISTS mydb.dummy_table;";
 

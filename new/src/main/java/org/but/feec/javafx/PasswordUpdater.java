@@ -1,10 +1,9 @@
 package org.but.feec.javafx;
 
-import de.mkammerer.argon2.Argon2;
-import de.mkammerer.argon2.Argon2Factory;
 import org.but.feec.javafx.config.DataSourceConfig;
 
 import java.sql.*;
+
 import static org.but.feec.javafx.services.Argon2FactoryService.ARGON2;
 
 public class PasswordUpdater {
@@ -14,7 +13,7 @@ public class PasswordUpdater {
     }
 
     public static void updatePasswords() {
-        // Connect to the database
+
 
         try (Connection connection = DataSourceConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(
@@ -26,7 +25,7 @@ public class PasswordUpdater {
                 String plaintextPassword = resultSet.getString("password");
                 String hashedPassword = hashPassword(plaintextPassword);
 
-                // Update the password hash in the database
+
                 PreparedStatement updateStmt = connection.prepareStatement("UPDATE mydb.user SET password = ? WHERE user_id = ?");
                 updateStmt.setString(1, hashedPassword);
                 updateStmt.setInt(2, userId);

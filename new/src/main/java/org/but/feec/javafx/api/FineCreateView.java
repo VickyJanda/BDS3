@@ -4,13 +4,12 @@ import java.time.LocalDate;
 
 public class FineCreateView {
 
-    private Long fineId;         // Added fineId field
+    private Long fineId;
     private Long userId;
     private Long rentId;
-    private LocalDate fineDueDate;  // Change to LocalDate
+    private LocalDate fineDueDate;
     private Double fineTotal;
 
-    // Getters and Setters for the fine attributes
 
     public Long getId() {
         return fineId;
@@ -55,10 +54,10 @@ public class FineCreateView {
     @Override
     public String toString() {
         return "FineCreateView{" +
-                "fineId=" + fineId +  // Include fineId in the toString method
+                "fineId=" + fineId +
                 ", userId=" + userId +
                 ", rentId=" + rentId +
-                ", fineDueDate=" + fineDueDate +  // Display LocalDate
+                ", fineDueDate=" + fineDueDate +
                 ", fineTotal=" + fineTotal +
                 '}';
     }

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class LocationRepository {
 
-    // Method to delete a location by its ID
+
     public void deleteLocationById(Long id) {
         try (Connection connection = DataSourceConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(
@@ -23,7 +23,7 @@ public class LocationRepository {
         }
     }
 
-    // Method to get a list of locations in basic view format
+
     public List<LocationBasicView> getLocationsBasicView() {
         try (Connection connection = DataSourceConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(
@@ -40,7 +40,7 @@ public class LocationRepository {
         }
     }
 
-    // Method to create a new location
+
     public void createLocation(LocationCreateView locationCreateView) {
         String insertLocationSQL = "INSERT INTO mydb.location (city, street, house_number, zip_code, library_id) VALUES (?, ?, ?, ?, ?)";
         try (Connection connection = DataSourceConfig.getConnection();
@@ -60,7 +60,7 @@ public class LocationRepository {
         }
     }
 
-    // Method to edit an existing location
+
     public void editLocation(LocationEditView locationEditView) {
         String updateLocationSQL = "UPDATE mydb.location SET city = ?, street = ?, house_number = ?, zip_code = ?, library_id = ? WHERE location_id = ?";
         try (Connection connection = DataSourceConfig.getConnection();
@@ -82,7 +82,7 @@ public class LocationRepository {
         }
     }
 
-    // Helper method to map a ResultSet to LocationBasicView
+
     private LocationBasicView mapToLocationBasicView(ResultSet rs) throws SQLException {
         LocationBasicView locationBasicView = new LocationBasicView();
         locationBasicView.setLocationId(rs.getLong("location_id"));

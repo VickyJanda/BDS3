@@ -4,10 +4,7 @@ import ch.qos.logback.classic.Logger;
 import javafx.beans.property.*;
 
 import java.time.LocalDateTime;
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
-
 
 
 public class FineBasicView {
@@ -20,7 +17,7 @@ public class FineBasicView {
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-    // Getter and setter methods for fineId
+
     public Long getId() {
         return fineIdProperty().get();
     }
@@ -29,7 +26,7 @@ public class FineBasicView {
         this.fineIdProperty().set(fineId);
     }
 
-    // Getter and setter methods for userId
+
     public Long getUserId() {
         return userIdProperty().get();
     }
@@ -38,7 +35,7 @@ public class FineBasicView {
         this.userIdProperty().set(userId);
     }
 
-    // Getter and setter methods for rentId
+
     public Long getRentId() {
         return rentIdProperty().get();
     }
@@ -47,18 +44,17 @@ public class FineBasicView {
         this.rentIdProperty().set(rentId);
     }
 
-    // Getter method
+
     public LocalDateTime getFineDueDate() {
         return fineDueDate.get();
     }
 
-    // Setter method
+
     public void setFineDueDate(LocalDateTime fineDueDate) {
         this.fineDueDate.set(fineDueDate);
     }
 
 
-    // Getter and setter methods for fineTotal
     public double getFineTotal() {
         return fineTotalProperty().get();
     }
@@ -67,7 +63,7 @@ public class FineBasicView {
         this.fineTotalProperty().set(fineTotal);
     }
 
-    // Property accessors for each field
+
     public LongProperty fineIdProperty() {
         return fineId;
     }

@@ -67,7 +67,7 @@ public class AuthorController {
         authorRepository = new AuthorRepository();
         authorService = new AuthorService(authorRepository);
 
-        // Initialize the table columns with author properties
+
         authorId.setCellValueFactory(new PropertyValueFactory<>("id"));
         firstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
         lastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
@@ -252,6 +252,7 @@ public class AuthorController {
         systemAuthorsTableView.refresh();
         systemAuthorsTableView.sort();
     }
+
     @FXML
     public void handleSimulateButton(ActionEvent actionEvent) {
         try {
@@ -261,11 +262,9 @@ public class AuthorController {
             Stage stage = new Stage();
             stage.setTitle("BDS Database Simulate Attack");
 
-            // Get the controller instance
+
             SimulateAttackController controller = fxmlLoader.getController();
 
-            // Set the controller with any necessary data (optional)
-            // controller.setPersonsController(this);  // Pass the current instance if needed
 
             stage.setScene(scene);
             stage.show();

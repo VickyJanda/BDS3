@@ -11,7 +11,6 @@ public class AuthorCreateView {
     private LocalDate born;
     private LocalDate death;
 
-    // Getters and Setters for the author attributes
 
     public String getFirstName() {
         return firstName;

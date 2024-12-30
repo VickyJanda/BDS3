@@ -23,7 +23,7 @@ public class LocationService {
     }
 
     public void createLocation(LocationCreateView locationCreateView) {
-        // Any additional business logic before saving the location can be added here
+
         locationRepository.createLocation(locationCreateView);
     }
 

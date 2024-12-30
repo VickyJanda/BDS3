@@ -44,7 +44,7 @@ public class LocationController {
     @FXML
     private TableColumn<LocationBasicView, String> locationZipCode;
     @FXML
-    private TableColumn<LocationBasicView, Long> libraryId; // Handles the library ID
+    private TableColumn<LocationBasicView, Long> libraryId;
     @FXML
     private TableView<LocationBasicView> systemLocationsTableView;
     @FXML
@@ -64,7 +64,7 @@ public class LocationController {
         locationRepository = new LocationRepository();
         locationService = new LocationService(locationRepository);
 
-        // Initialize the table columns with location properties
+
         locationId.setCellValueFactory(new PropertyValueFactory<LocationBasicView, Long>("locationId"));
         locationCity.setCellValueFactory(new PropertyValueFactory<LocationBasicView, String>("city"));
         locationStreet.setCellValueFactory(new PropertyValueFactory<LocationBasicView, String>("street"));
@@ -81,7 +81,7 @@ public class LocationController {
         initializeTableViewSelection();
         loadIcons();
 
-        // Initialize search functionality
+
         setupSearch();
 
         logger.info("LocationController initialized");
@@ -90,52 +90,51 @@ public class LocationController {
     private FilteredList<LocationBasicView> filteredData;
 
     private void setupSearch() {
-        // Create a FilteredList to hold filtered data
 
-        // Add listeners to search fields to filter data
+
         searchIdField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(location -> {
-                if (newValue.isEmpty()) return true; // If the field is empty, show all results
-                return location.getLocationId().toString().contains(newValue); // Filter by location ID
+                if (newValue.isEmpty()) return true;
+                return location.getLocationId().toString().contains(newValue);
             });
         });
 
         searchCityField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(location -> {
                 if (newValue.isEmpty()) return true;
-                return location.getCity().toLowerCase().contains(newValue.toLowerCase()); // Filter by city
+                return location.getCity().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchStreetField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(location -> {
                 if (newValue.isEmpty()) return true;
-                return location.getStreet().toLowerCase().contains(newValue.toLowerCase()); // Filter by street
+                return location.getStreet().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchHouseNumberField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(location -> {
                 if (newValue.isEmpty()) return true;
-                return location.getHouseNumber().toLowerCase().contains(newValue.toLowerCase()); // Filter by house number
+                return location.getHouseNumber().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchZipCodeField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(location -> {
                 if (newValue.isEmpty()) return true;
-                return location.getZipCode().toLowerCase().contains(newValue.toLowerCase()); // Filter by zip code
+                return location.getZipCode().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchLibraryIdField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(location -> {
                 if (newValue.isEmpty()) return true;
-                return location.getLibraryId().toString().contains(newValue); // Filter by library ID
+                return location.getLibraryId().toString().contains(newValue);
             });
         });
 
-        // Bind the filtered data to the table's items property
+
         SortedList<LocationBasicView> sortedData = new SortedList<>(filteredData);
         sortedData.comparatorProperty().bind(systemLocationsTableView.comparatorProperty());
         systemLocationsTableView.setItems(sortedData);
@@ -145,7 +144,7 @@ public class LocationController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/but/feec/javafx/fxml/" + fxml));
             AnchorPane newContent = loader.load();
-            contentAnchorPane.getChildren().setAll(newContent); // Replace the current content
+            contentAnchorPane.getChildren().setAll(newContent);
         } catch (IOException e) {
             e.printStackTrace();
             logger.error("Error loading FXML: " + fxml, e);
@@ -154,7 +153,7 @@ public class LocationController {
 
     @FXML
     private void handleSwitchLocationButton() {
-        loadNewContent("LocationTable.fxml"); // Load location table content
+        loadNewContent("LocationTable.fxml");
     }
 
     private void initializeTableViewSelection() {
@@ -168,7 +167,7 @@ public class LocationController {
                     FXMLLoader fxmlLoader = new FXMLLoader();
                     fxmlLoader.setLocation(App.class.getResource("fxml/LocationEdit.fxml"));
 
-                    // Load the FXML and get the controller
+
                     Scene scene = new Scene(fxmlLoader.load(), 600, 500);
                     LocationEditController controller = fxmlLoader.getController();
 
@@ -217,7 +216,7 @@ public class LocationController {
     }
 
     private void loadIcons() {
-        // Load logos or icons if needed
+
     }
 
     private void showAlert(String header, String content) {
@@ -226,7 +225,7 @@ public class LocationController {
         alert.setHeaderText(header);
         alert.setContentText(content);
 
-        // Set the owner to center the alert
+
         Stage stage = (Stage) contentAnchorPane.getScene().getWindow();
         alert.initOwner(stage);
 
@@ -261,6 +260,7 @@ public class LocationController {
         filteredData = new FilteredList<>(observableLocationsList, p -> true);
         systemLocationsTableView.setItems(filteredData);
     }
+
     @FXML
     public void handleSimulateButton(ActionEvent actionEvent) {
         try {
@@ -270,11 +270,9 @@ public class LocationController {
             Stage stage = new Stage();
             stage.setTitle("BDS JavaFX Simulate Attack");
 
-            // Get the controller instance
+
             SimulateAttackController controller = fxmlLoader.getController();
 
-            // Set the controller with any necessary data (optional)
-            // controller.setPersonsController(this);  // Pass the current instance if needed
 
             stage.setScene(scene);
             stage.show();

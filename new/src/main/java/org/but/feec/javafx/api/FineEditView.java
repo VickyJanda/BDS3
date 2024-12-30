@@ -8,7 +8,6 @@ public class FineEditView {
     private String fineDueDate;
     private Double fineTotal;
 
-    // Getters and Setters for the fine attributes
 
     public Long getId() {
         return id;

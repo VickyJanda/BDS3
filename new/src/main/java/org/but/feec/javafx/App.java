@@ -21,6 +21,7 @@ public class App extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
     @Override
     public void start(Stage primaryStage) {
         try {
@@ -37,7 +38,7 @@ public class App extends Application {
             primaryStage.setScene(scene);
             primaryStage.setOnCloseRequest(event -> {
                 try {
-                    // Drop the dummy table on window close
+
                     SimulateAttackController.dropDummyTable();
                 } catch (SQLException e) {
                     System.err.println("Error dropping the table: " + e.getMessage());

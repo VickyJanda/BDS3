@@ -23,7 +23,7 @@ public class FineService {
     }
 
     public void createFine(FineCreateView fineCreateView) {
-        // Any additional business logic before saving the fine can be added here
+
         fineRepository.createFine(fineCreateView);
     }
 

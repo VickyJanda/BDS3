@@ -11,7 +11,7 @@ public class Person {
     private IntegerProperty age;
     private StringProperty phoneNumber;
 
-    // Constructor
+
     public Person(int id, String email, String givenName, String familyName, int age, String phoneNumber) {
         this.id = new SimpleIntegerProperty(id);
         this.email = new SimpleStringProperty(email);
@@ -21,7 +21,7 @@ public class Person {
         this.phoneNumber = new SimpleStringProperty(phoneNumber);
     }
 
-    // Getters and Setters
+
     public int getId() {
         return id.get();
     }

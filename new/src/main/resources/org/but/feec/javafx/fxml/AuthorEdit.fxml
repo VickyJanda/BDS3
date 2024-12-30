@@ -27,7 +27,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <!-- Author Fields -->
+                
                 <Label text="Author ID">
                     <padding>
                         <Insets left="5.0" />
@@ -64,14 +64,14 @@
                     </padding>
                 </Label>
 
-                <!-- Author Input Fields -->
+                
                 <TextField fx:id="idTextField" GridPane.columnIndex="1" />
                 <TextField fx:id="firstNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField fx:id="lastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                 <TextField fx:id="countryTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                 <TextField fx:id="mainLanguageTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 
-                <!-- Date Pickers for Born and Death -->
+                
                 <DatePicker fx:id="authorBornDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                 <DatePicker fx:id="authorDeathDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             </children>

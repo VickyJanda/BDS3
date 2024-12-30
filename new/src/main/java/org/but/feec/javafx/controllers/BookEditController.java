@@ -46,7 +46,7 @@ public class BookEditController {
     private BookRepository bookRepository;
     private ValidationSupport validation;
 
-    // used to reference the stage and to get passed data through it
+
     public Stage stage;
 
     public void setStage(Stage stage) {

@@ -25,7 +25,7 @@
                 <RowConstraints maxHeight="57.0" minHeight="30.0" prefHeight="57.0" />
             </rowConstraints>
             <children>
-                <!-- Fine Fields -->
+                
                 <Label text="Fine ID">
                     <padding>
                         <Insets left="5.0" />
@@ -52,7 +52,7 @@
                     </padding>
                 </Label>
 
-                <!-- Fine Input Fields -->
+                
                 <TextField fx:id="fineIdTextField" promptText="Enter Fine ID" GridPane.columnIndex="1" />
                 <TextField fx:id="userIdTextField" promptText="Enter User ID" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField fx:id="rentIdTextField" promptText="Enter User ID" GridPane.columnIndex="1" GridPane.rowIndex="2" />

@@ -25,7 +25,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <!-- Book Fields -->
+                
                 <Label text="Title">
                     <padding>
                         <Insets left="5.0" />
@@ -47,7 +47,7 @@
                     </padding>
                 </Label>
 
-                <!-- Book Input Fields -->
+                
                 <TextField fx:id="newBookName" promptText="Type book title" GridPane.columnIndex="1" />
                 <TextField fx:id="newBookIsbn" promptText="Type book author" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField fx:id="newBookPrice" promptText="Type book ISBN" GridPane.columnIndex="1" GridPane.rowIndex="2" />

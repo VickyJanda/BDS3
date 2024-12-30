@@ -23,7 +23,7 @@ public class BookService {
     }
 
     public void createBook(BookCreateView bookCreateView) {
-        // Any additional business logic before saving the book can be added here
+
         bookRepository.createBook(bookCreateView);
     }
 

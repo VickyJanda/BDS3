@@ -88,59 +88,60 @@ public class PersonsController {
         initializeTableViewSelection();
         loadIcons();
 
-        // Initialize search functionality
+
         setupSearch();
 
         logger.info("PersonsController initialized");
     }
-    private FilteredList<PersonBasicView> filteredData;
-    private void setupSearch() {
-        // Create a FilteredList to hold filtered data
 
-        // Add listeners to search fields to filter data
+    private FilteredList<PersonBasicView> filteredData;
+
+    private void setupSearch() {
+
+
         searchIdField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(person -> {
-                if (newValue.isEmpty()) return true; // If the field is empty, show all results
-                return person.getId().toString().contains(newValue); // Filter by ID
+                if (newValue.isEmpty()) return true;
+                return person.getId().toString().contains(newValue);
             });
         });
 
         searchEmailField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(person -> {
                 if (newValue.isEmpty()) return true;
-                return person.getEmail().toLowerCase().contains(newValue.toLowerCase()); // Filter by email
+                return person.getEmail().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchGivenNameField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(person -> {
                 if (newValue.isEmpty()) return true;
-                return person.getGivenName().toLowerCase().contains(newValue.toLowerCase()); // Filter by given name
+                return person.getGivenName().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchFamilyNameField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(person -> {
                 if (newValue.isEmpty()) return true;
-                return person.getFamilyName().toLowerCase().contains(newValue.toLowerCase()); // Filter by family name
+                return person.getFamilyName().toLowerCase().contains(newValue.toLowerCase());
             });
         });
 
         searchAgeField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(person -> {
                 if (newValue.isEmpty()) return true;
-                return person.getAge().contains(newValue); // Filter by age
+                return person.getAge().contains(newValue);
             });
         });
 
         searchPhoneField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(person -> {
                 if (newValue.isEmpty()) return true;
-                return person.getPhoneNumber().contains(newValue); // Filter by phone number
+                return person.getPhoneNumber().contains(newValue);
             });
         });
 
-        // Bind the filtered data to the table's items property
+
         SortedList<PersonBasicView> sortedData = new SortedList<>(filteredData);
         sortedData.comparatorProperty().bind(systemPersonsTableView.comparatorProperty());
         systemPersonsTableView.setItems(sortedData);
@@ -148,10 +149,10 @@ public class PersonsController {
 
     public void loadNewContent(String fxml) {
         try {
-            // Correctly load the FXML with the absolute path from the resources directory
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/but/feec/javafx/fxml/" + fxml));
             AnchorPane newContent = loader.load();
-            contentAnchorPane.getChildren().setAll(newContent); // Replace the current content
+            contentAnchorPane.getChildren().setAll(newContent);
         } catch (IOException e) {
             e.printStackTrace();
             logger.error("Error loading FXML: " + fxml, e);
@@ -161,29 +162,28 @@ public class PersonsController {
 
     @FXML
     private void handleSwitchUserButton() {
-        loadNewContent("UserTable.fxml"); // Load user table content
+        loadNewContent("UserTable.fxml");
     }
 
     @FXML
     private void handleSwitchBookButton() {
-        loadNewContent("BookTable.fxml"); // Load library table content
+        loadNewContent("BookTable.fxml");
     }
 
     @FXML
     private void handleSwitchAuthorButton() {
-        loadNewContent("AuthorTable.fxml"); // Load library table content
+        loadNewContent("AuthorTable.fxml");
     }
 
     @FXML
     private void handleSwitchLocationButton() {
-        loadNewContent("LocationTable.fxml"); // Load library table content
+        loadNewContent("LocationTable.fxml");
     }
 
     @FXML
     private void handleSwitchFineButton() {
-        loadNewContent("FineTable.fxml"); // Load library table content
+        loadNewContent("FineTable.fxml");
     }
-
 
 
     private void initializeTableViewSelection() {
@@ -192,24 +192,24 @@ public class PersonsController {
         MenuItem delete = new MenuItem("Delete");
         edit.setOnAction((ActionEvent event) -> {
             PersonBasicView personView = systemPersonsTableView.getSelectionModel().getSelectedItem();
-            if (personView != null) { // Ensure a person is selected
+            if (personView != null) {
                 try {
                     FXMLLoader fxmlLoader = new FXMLLoader();
                     fxmlLoader.setLocation(App.class.getResource("fxml/PersonEdit.fxml"));
 
-                    // Load the FXML and get the controller
+
                     Scene scene = new Scene(fxmlLoader.load(), 600, 500);
                     PersonsEditController controller = fxmlLoader.getController();
 
-                    // Create and configure the stage
+
                     Stage stage = new Stage();
                     stage.setTitle("Edit User");
 
-                    // Set the user data
+
                     stage.setUserData(personView);
 
-                    // Ensure the controller receives the stage
-                    controller.setStage(stage); // Pass the stage to the controller
+
+                    controller.setStage(stage);
 
                     stage.setScene(scene);
                     stage.show();
@@ -217,7 +217,7 @@ public class PersonsController {
                     ExceptionHandler.handleException(ex);
                 }
             } else {
-                // Show an alert if no person is selected
+
                 Alert alert = new Alert(Alert.AlertType.WARNING);
                 alert.setTitle("Warning");
                 alert.setHeaderText("No Selection");
@@ -256,7 +256,7 @@ public class PersonsController {
         delete.setOnAction((ActionEvent event) -> {
             PersonBasicView selectedPerson = systemPersonsTableView.getSelectionModel().getSelectedItem();
             if (selectedPerson != null) {
-                // Show confirmation dialog
+
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setTitle("Delete Confirmation");
                 alert.setHeaderText("Are you sure you want to delete this person?");
@@ -264,11 +264,11 @@ public class PersonsController {
                         + selectedPerson.getGivenName() + " "
                         + selectedPerson.getFamilyName());
 
-                // Wait for user response
+
                 if (alert.showAndWait().orElse(ButtonType.CANCEL) == ButtonType.OK) {
-                    // Delete the person from the database
+
                     personService.deletePersonById(selectedPerson.getId());
-                    refresh(); // Refresh the table view
+                    refresh();
                     Alert info = new Alert(Alert.AlertType.INFORMATION);
                     info.setTitle("Deletion Successful");
                     info.setHeaderText(null);
@@ -276,7 +276,7 @@ public class PersonsController {
                     info.showAndWait();
                 }
             } else {
-                // Show an alert if no person is selected
+
                 Alert alert = new Alert(Alert.AlertType.WARNING);
                 alert.setTitle("Warning");
                 alert.setHeaderText("No Selection");
@@ -319,9 +319,9 @@ public class PersonsController {
             Stage stage = new Stage();
             stage.setTitle("Create User");
 
-            // Get the controller instance and pass this instance of PersonsController
+
             PersonCreateController controller = fxmlLoader.getController();
-            controller.setPersonsController(this);  // Pass the current instance of PersonsController
+            controller.setPersonsController(this);
 
             stage.setScene(scene);
             stage.show();
@@ -342,6 +342,7 @@ public class PersonsController {
         filteredData = new FilteredList<>(observablePersonsList, p -> true);
         systemPersonsTableView.setItems(filteredData);
     }
+
     @FXML
     public void handleSimulateButton(ActionEvent actionEvent) {
         try {
@@ -351,11 +352,9 @@ public class PersonsController {
             Stage stage = new Stage();
             stage.setTitle("BDS Database Simulate Attack");
 
-            // Get the controller instance
+
             SimulateAttackController controller = fxmlLoader.getController();
 
-            // Set the controller with any necessary data (optional)
-            // controller.setPersonsController(this);  // Pass the current instance if needed
 
             stage.setScene(scene);
             stage.show();

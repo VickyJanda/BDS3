@@ -44,7 +44,7 @@ public class FineController {
     @FXML
     private TableColumn<FineBasicView, String> fineDueDate;
     @FXML
-    private TableColumn<FineBasicView, Integer> fineTotal;  // Changed to Integer
+    private TableColumn<FineBasicView, Integer> fineTotal;
     @FXML
     private TableView<FineBasicView> fineTableView;
     @FXML
@@ -64,7 +64,7 @@ public class FineController {
         FineRepository = new FineRepository();
         FineService = new FineService(FineRepository);
 
-        // Initialize the table columns with Fine properties
+
         fineId.setCellValueFactory(new PropertyValueFactory<FineBasicView, Long>("fineId"));
         userId.setCellValueFactory(new PropertyValueFactory<FineBasicView, String>("userId"));
         rentId.setCellValueFactory(new PropertyValueFactory<FineBasicView, String>("rentId"));
@@ -81,7 +81,7 @@ public class FineController {
         initializeTableViewSelection();
         loadIcons();
 
-        // Initialize search functionality
+
         setupSearch();
 
         logger.info("FineController initialized");
@@ -90,34 +90,33 @@ public class FineController {
     private FilteredList<FineBasicView> filteredData;
 
     private void setupSearch() {
-        // Create a FilteredList to hold filtered data
 
-        // Add listeners to search fields to filter data
+
         searchFineIdField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(Fine -> {
-                if (newValue.isEmpty()) return true; // If the field is empty, show all results
-                return Fine.getId().toString().contains(newValue); // Filter by ID
+                if (newValue.isEmpty()) return true;
+                return Fine.getId().toString().contains(newValue);
             });
         });
 
         searchUserIdField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(Fine -> {
                 if (newValue.isEmpty()) return true;
-                return Fine.getUserId().toString().contains(newValue); // Filter by name
+                return Fine.getUserId().toString().contains(newValue);
             });
         });
 
         searchRentIdField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(Fine -> {
                 if (newValue.isEmpty()) return true;
-                return Fine.getRentId().toString().contains(newValue); // Filter by ISBN
+                return Fine.getRentId().toString().contains(newValue);
             });
         });
 
         searchFineDueDateField.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(Fine -> {
                 if (newValue.isEmpty()) return true;
-                return Fine.getFineDueDate().toString().contains(newValue); // Filter by status
+                return Fine.getFineDueDate().toString().contains(newValue);
             });
         });
 
@@ -125,15 +124,15 @@ public class FineController {
             filteredData.setPredicate(Fine -> {
                 if (newValue.isEmpty()) return true;
                 try {
-                    int price = Integer.parseInt(newValue); // Parse the price as an integer
-                    return Fine.getFineTotal() == price; // Filter by exact price match
+                    int price = Integer.parseInt(newValue);
+                    return Fine.getFineTotal() == price;
                 } catch (NumberFormatException e) {
-                    return false; // If the value is not a valid number, return false
+                    return false;
                 }
             });
         });
 
-        // Bind the filtered data to the table's items property
+
         SortedList<FineBasicView> sortedData = new SortedList<>(filteredData);
         sortedData.comparatorProperty().bind(fineTableView.comparatorProperty());
         fineTableView.setItems(sortedData);
@@ -143,7 +142,7 @@ public class FineController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/but/feec/javafx/fxml/" + fxml));
             AnchorPane newContent = loader.load();
-            contentAnchorPane.getChildren().setAll(newContent); // Replace the current content
+            contentAnchorPane.getChildren().setAll(newContent);
         } catch (IOException e) {
             e.printStackTrace();
             logger.error("Error loading FXML: " + fxml, e);
@@ -152,12 +151,12 @@ public class FineController {
 
     @FXML
     private void handleSwitchUserButton() {
-        loadNewContent("UserTable.fxml"); // Load user table content
+        loadNewContent("UserTable.fxml");
     }
 
     @FXML
     private void handleSwitchFineButton() {
-        loadNewContent("FineTable.fxml"); // Load library table content
+        loadNewContent("FineTable.fxml");
     }
 
     private void initializeTableViewSelection() {
@@ -171,7 +170,7 @@ public class FineController {
                     FXMLLoader fxmlLoader = new FXMLLoader();
                     fxmlLoader.setLocation(App.class.getResource("fxml/FineEdit.fxml"));
 
-                    // Load the FXML and get the controller
+
                     Scene scene = new Scene(fxmlLoader.load(), 600, 500);
                     FineEditController controller = fxmlLoader.getController();
 
@@ -232,7 +231,7 @@ public class FineController {
         alert.setHeaderText(header);
         alert.setContentText(content);
 
-        // Set the owner to center the alert
+
         Stage stage = (Stage) contentAnchorPane.getScene().getWindow();
         alert.initOwner(stage);
 
@@ -267,6 +266,7 @@ public class FineController {
         filteredData = new FilteredList<>(observableFinesList, p -> true);
         fineTableView.setItems(filteredData);
     }
+
     @FXML
     public void handleSimulateButton(ActionEvent actionEvent) {
         try {
@@ -276,11 +276,9 @@ public class FineController {
             Stage stage = new Stage();
             stage.setTitle("BDS JavaFX Simulate Attack");
 
-            // Get the controller instance
+
             SimulateAttackController controller = fxmlLoader.getController();
 
-            // Set the controller with any necessary data (optional)
-            // controller.setPersonsController(this);  // Pass the current instance if needed
 
             stage.setScene(scene);
             stage.show();

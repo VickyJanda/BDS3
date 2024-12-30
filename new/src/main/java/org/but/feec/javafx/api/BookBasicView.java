@@ -16,7 +16,7 @@ public class BookBasicView {
     private IntegerProperty price = new SimpleIntegerProperty();
     private IntegerProperty quantity = new SimpleIntegerProperty();
 
-    // Getter and setter methods for id
+
     public Long getId() {
         return idProperty().get();
     }
@@ -25,7 +25,7 @@ public class BookBasicView {
         this.idProperty().setValue(id);
     }
 
-    // Getter and setter methods for name
+
     public String getName() {
         return nameProperty().get();
     }
@@ -34,7 +34,7 @@ public class BookBasicView {
         this.nameProperty().setValue(name);
     }
 
-    // Getter and setter methods for ISBN
+
     public String getIsbn() {
         return isbnProperty().get();
     }
@@ -43,7 +43,7 @@ public class BookBasicView {
         this.isbnProperty().setValue(isbn);
     }
 
-    // Getter and setter methods for status
+
     public String getStatus() {
         return statusProperty().get();
     }
@@ -52,7 +52,7 @@ public class BookBasicView {
         this.statusProperty().setValue(status);
     }
 
-    // Getter and setter methods for price
+
     public int getPrice() {
         return priceProperty().get();
     }
@@ -61,7 +61,7 @@ public class BookBasicView {
         this.priceProperty().setValue(price);
     }
 
-    // Getter and setter methods for quantity
+
     public int getQuantity() {
         return quantityProperty().get();
     }
@@ -70,7 +70,7 @@ public class BookBasicView {
         this.quantityProperty().setValue(quantity);
     }
 
-    // Property accessors for each field
+
     public LongProperty idProperty() {
         return id;
     }

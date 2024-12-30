@@ -15,7 +15,7 @@ import java.util.List;
 
 public class FineRepository {
 
-    // Method to delete a fine by its ID
+
     public void deleteFineById(Long id) {
         try (Connection connection = DataSourceConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(
@@ -27,7 +27,7 @@ public class FineRepository {
         }
     }
 
-    // Method to get a list of fines
+
     public List<FineBasicView> getFinesBasicView() {
         try (Connection connection = DataSourceConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(
@@ -36,7 +36,7 @@ public class FineRepository {
             ResultSet resultSet = preparedStatement.executeQuery();
             List<FineBasicView> fineList = new ArrayList<>();
             while (resultSet.next()) {
-                fineList.add(mapToFineBasicView(resultSet));  // Changed to map to FineBasicView
+                fineList.add(mapToFineBasicView(resultSet));
             }
             return fineList;
         } catch (SQLException e) {
@@ -44,7 +44,7 @@ public class FineRepository {
         }
     }
 
-    // Method to create a new fine
+
     public void createFine(FineCreateView fineCreateView) {
         String insertFineSQL = "INSERT INTO mydb.fine (user_id, rent_id, fine_due_date, fine_total) VALUES (?, ?, ?, ?)";
         try (Connection connection = DataSourceConfig.getConnection();
@@ -52,7 +52,7 @@ public class FineRepository {
             preparedStatement.setLong(1, fineCreateView.getUserId());
             preparedStatement.setLong(2, fineCreateView.getRentId());
 
-            // Convert LocalDate to SQL Date for the database
+
             Date fineDueDateSQL = Date.valueOf(fineCreateView.getFineDueDate());
             preparedStatement.setDate(3, fineDueDateSQL);
 
@@ -67,7 +67,7 @@ public class FineRepository {
         }
     }
 
-    // Method to update an existing fine
+
     public void editFine(FineEditView fineEditView) {
         String updateFineSQL = "UPDATE mydb.fine SET user_id = ?, rent_id = ?, fine_due_date = ?, fine_total = ? WHERE fine_id = ?";
         try (Connection connection = DataSourceConfig.getConnection();
@@ -75,7 +75,7 @@ public class FineRepository {
             preparedStatement.setLong(1, fineEditView.getUserId());
             preparedStatement.setLong(2, fineEditView.getRentId());
 
-            // Convert LocalDate to SQL Date for the database
+
             Date fineDueDateSQL = Date.valueOf(fineEditView.getFineDueDate());
             preparedStatement.setDate(3, fineDueDateSQL);
 
@@ -92,15 +92,14 @@ public class FineRepository {
         }
     }
 
-    // Helper method to map a ResultSet to a FineBasicView object
-    // Helper method to map a ResultSet to a FineBasicView object
+
     private FineBasicView mapToFineBasicView(ResultSet rs) throws SQLException {
         FineBasicView fineBasicView = new FineBasicView();
         fineBasicView.setId(rs.getLong("fine_id"));
         fineBasicView.setUserId(rs.getLong("user_id"));
         fineBasicView.setRentId(rs.getLong("rent_id"));
 
-        // Convert SQL Date to LocalDate directly
+
         Date fineDueDateSQL = rs.getDate("fine_due_date");
         LocalDateTime fineDueDateTime = fineDueDateSQL.toLocalDate().atStartOfDay();
         if (fineDueDateSQL != null) {

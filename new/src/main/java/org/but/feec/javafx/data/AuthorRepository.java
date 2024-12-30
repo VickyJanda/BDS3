@@ -49,20 +49,20 @@ public class AuthorRepository {
             preparedStatement.setString(3, authorCreateView.getCountry());
             preparedStatement.setString(4, authorCreateView.getMainLanguage());
 
-            // Convert LocalDate to java.sql.Date
+
             LocalDate bornDate = authorCreateView.getBorn();
             if (bornDate != null) {
-                preparedStatement.setDate(5, Date.valueOf(bornDate));  // Convert LocalDate to java.sql.Date
+                preparedStatement.setDate(5, Date.valueOf(bornDate));
             } else {
-                preparedStatement.setNull(5, Types.DATE);  // If bornDate is null, set it as SQL NULL
+                preparedStatement.setNull(5, Types.DATE);
             }
 
-            // Convert LocalDate to java.sql.Date for death as well
+
             LocalDate deathDate = authorCreateView.getDeath();
             if (deathDate != null) {
-                preparedStatement.setDate(6, Date.valueOf(deathDate));  // Convert LocalDate to java.sql.Date
+                preparedStatement.setDate(6, Date.valueOf(deathDate));
             } else {
-                preparedStatement.setNull(6, Types.DATE);  // If deathDate is null, set it as SQL NULL
+                preparedStatement.setNull(6, Types.DATE);
             }
 
             int affectedRows = preparedStatement.executeUpdate();
@@ -86,20 +86,20 @@ public class AuthorRepository {
             preparedStatement.setString(3, authorEditView.getCountry());
             preparedStatement.setString(4, authorEditView.getMainLanguage());
 
-            // Convert LocalDate to java.sql.Date for 'born'
+
             LocalDate bornDate = authorEditView.getBorn();
             if (bornDate != null) {
-                preparedStatement.setDate(5, Date.valueOf(bornDate));  // Convert LocalDate to java.sql.Date
+                preparedStatement.setDate(5, Date.valueOf(bornDate));
             } else {
-                preparedStatement.setNull(5, Types.DATE);  // If bornDate is null, set it as SQL NULL
+                preparedStatement.setNull(5, Types.DATE);
             }
 
-            // Convert LocalDate to java.sql.Date for 'death'
+
             LocalDate deathDate = authorEditView.getDeath();
             if (deathDate != null) {
-                preparedStatement.setDate(6, Date.valueOf(deathDate));  // Convert LocalDate to java.sql.Date
+                preparedStatement.setDate(6, Date.valueOf(deathDate));
             } else {
-                preparedStatement.setNull(6, Types.DATE);  // If deathDate is null, set it as SQL NULL
+                preparedStatement.setNull(6, Types.DATE);
             }
 
             preparedStatement.setLong(7, authorEditView.getId());
@@ -122,19 +122,19 @@ public class AuthorRepository {
         authorBasicView.setCountry(rs.getString("country"));
         authorBasicView.setMainLanguage(rs.getString("main_language"));
 
-        // Convert java.sql.Date to java.time.LocalDate
+
         Date bornDate = rs.getDate("born");
         if (bornDate != null) {
-            authorBasicView.setBorn(bornDate.toLocalDate());  // Convert to LocalDate
+            authorBasicView.setBorn(bornDate.toLocalDate());
         } else {
-            authorBasicView.setBorn(null);  // Handle case where born date is null
+            authorBasicView.setBorn(null);
         }
 
         Date deathDate = rs.getDate("death");
         if (deathDate != null) {
-            authorBasicView.setDeath(deathDate.toLocalDate());  // Convert to LocalDate
+            authorBasicView.setDeath(deathDate.toLocalDate());
         } else {
-            authorBasicView.setDeath(null);  // Handle case where death date is null
+            authorBasicView.setDeath(null);
         }
 
         return authorBasicView;
